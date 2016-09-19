@@ -4,6 +4,10 @@ var webpack = require('webpack');
 module.exports = {
     entry: [
         'babel-polyfill',
+        './node_modules/jquery/dist/jquery.min.js',
+        './node_modules/bootstrap/dist/js/bootstrap.min.js',
+        './node_modules/bootstrap/dist/css/bootstrap.min.css',
+        './node_modules/font-awesome/css/font-awesome.min.css',
         './app/index.js',
         './app/styles/style.css'
     ],
@@ -27,10 +31,15 @@ module.exports = {
                 test: /\.css$/,
                 loader: 'style!css-loader'
             },
-            { test: /\.eot(\?v=\d+\.\d+\.\d+)?$/, loader: "file" },
-            { test: /\.(woff|woff2)$/, loader:"url?prefix=font/&limit=5000" },
-            { test: /\.ttf(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=application/octet-stream" },
-            { test: /\.svg(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=image/svg+xml" }
+            { test   : /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/, loader : 'file-loader' },
+            { test: /bootstrap.+\.(jsx|js)$/, loader: 'imports?jQuery=jquery,$=jquery,this=>window' },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                loaders: [
+                    'file?hash=sha512&digest=hex&name=[hash].[ext]',
+                    'image-webpack?bypassOnDebug&optimizationLevel=7&interlaced=false'
+                ]
+            }
         ]
     },
 
