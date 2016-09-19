@@ -1,5 +1,9 @@
+
 var webpack = require('webpack');
 var path = require('path');
+
+var bootstrapPath = __dirname + '/node_modules/bootstrap/dist/css';
+var fontAwesomePath = __dirname + '/node_modules/font-awesome/css';
 
 module.exports = {
 
@@ -15,7 +19,7 @@ module.exports = {
         path: '/',
         filename: 'bundle.js'
     },
-
+    devtool: 'source-map',
     devServer: {
         hot: true,
         filename: 'bundle.js',
@@ -36,7 +40,6 @@ module.exports = {
           chunkModules: false
         }
     },
-
 
     plugins: [
         new webpack.HotModuleReplacementPlugin()
@@ -60,7 +63,9 @@ module.exports = {
     },
 
     resolve: {
-        root: path.resolve('./app')
+        root: path.resolve('./app'),
+        extensions: ['', '.js', '.jsx', '.css'],
+        modulesDirectories: ['node_modules', bootstrapPath, fontAwesomePath]
     }
 
 };
