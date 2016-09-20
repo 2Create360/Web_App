@@ -6,10 +6,15 @@ export default class Sidebar extends Component {
 
     render() {
         return (
-            <div className="col-md-3" id="sidebar">
+
+        <div className="col-md-3" id="sidebar">
                 <div className="page-sidebar-wrapper">
                     <div className="page-sidebar navbar-collapse collapse">
                         <ul className="page-sidebar-menu" data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
+                            <li className="sidebar-toggler-wrapper">
+                                <div className="sidebar-toggler">
+                                </div>
+                            </li>
                             <li className="start">
                                 <a href="javascript:;">
                                     <img src="img/startLogo.png" className="img-responsive" />

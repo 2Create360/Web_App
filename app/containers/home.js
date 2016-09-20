@@ -12,6 +12,8 @@ class Home extends Component {
             <div>
                 <div className="promo-block" id="promo-block">
                     <div className="row">
+                        <a href="javascript:;" className="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">
+                        </a>
                         <Sidebar></Sidebar>
                         <div className="col-md-9" id="slideContent">
                             <div className={`col-md-11 text-right ${this.props.authenticatedUser ? 'hidden' : ''}`} id="startButtons">

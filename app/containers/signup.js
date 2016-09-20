@@ -82,10 +82,15 @@ class SignUpForm extends Component {
 
         return (
             <div>
-                <div className="row header">
-                    <div className="col-md-2 col-sm-2">
-                        <Link className="scroll site-logo" to="/">
-                            <img src="img/global/logo.png" alt="On-it"></img></Link>
+                <div className="page-header md-shadow-z-1-i navbar navbar-fixed-top">
+                    <div className="page-header-inner">
+                        <div className="page-logo">
+                            <a href="index.html">
+                                <img src="img/global/logo.png" style={{width: 200, height: 200}}alt="logo" className="logo-default"></img>
+                            </a>
+                            <div className="menu-toggler sidebar-toggler hide">
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div className="content height100vh signupContent">

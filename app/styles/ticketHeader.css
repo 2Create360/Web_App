@@ -53,9 +53,6 @@
     font-weight: 300;
 }
 @media (min-width: 992px) {
-    .page-sidebar.navbar-collapse {
-        max-height: none !important;
-    }
     .page-sidebar.navbar-collapse, .page-sidebar-closed.page-sidebar-fixed .page-sidebar:hover.navbar-collapse{
         padding:0;
         box-shadow:none;
