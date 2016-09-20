@@ -5,6 +5,7 @@ import React, { Component, PropTypes } from 'react'
 import { Field, SubmissionError, reduxForm } from 'redux-form'
 import {connect} from 'react-redux';
 import {signInUser, signInUserSuccess, signInUserFailure} from '../actions/users';
+import { Link } from 'react-router'
 
 
 //Client side validation
@@ -82,8 +83,8 @@ class SignInForm extends Component {
             <div>
                 <div className="row header">
                     <div className="col-md-2 col-sm-2">
-                        <a className="scroll site-logo" href="#promo-block">
-                            <img src="img/global/logo.png" alt="On-it"></img></a>
+                        <Link className="scroll site-logo" to="/">
+                            <img src="img/global/logo.png" alt="On-it"></img></Link>
                     </div>
                 </div>
                 <div className="content height100vh signupContent">

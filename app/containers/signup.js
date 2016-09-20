@@ -4,6 +4,7 @@ import {connect} from 'react-redux'
 import {signUpUser, signUpUserSuccess, signUpUserFailure, resetUser,
     validateUserFields,validateUserFieldsSuccess,validateUserFieldsFailure,
     resetValidateUserFields } from '../actions/users';
+import { Link } from 'react-router'
 
 //Client side validation
 function validate(values) {
@@ -83,8 +84,8 @@ class SignUpForm extends Component {
             <div>
                 <div className="row header">
                     <div className="col-md-2 col-sm-2">
-                        <a className="scroll site-logo" href="#promo-block">
-                            <img src="img/global/logo.png" alt="On-it"></img></a>
+                        <Link className="scroll site-logo" to="/">
+                            <img src="img/global/logo.png" alt="On-it"></img></Link>
                     </div>
                 </div>
                 <div className="content height100vh signupContent">

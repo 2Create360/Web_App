@@ -15,8 +15,8 @@ class Home extends Component {
                         <Sidebar></Sidebar>
                         <div className="col-md-9" id="slideContent">
                             <div className={`col-md-11 text-right ${this.props.authenticatedUser ? 'hidden' : ''}`} id="startButtons">
-                                <Link to="/signin" className="btn btn-primary">Sign In</Link>
-                                <Link to="/signup" className="btn btn-primary">Sign Up</Link>
+                                <Link to="/signin" className="btn btn-primary noborder">Sign In</Link>
+                                <Link to="/signup" className="btn btn-primary noborder">Sign Up</Link>
                             </div>
                             <div className="tp-banner-container">
                                 <div className="tp-banner" >
@@ -148,9 +148,6 @@ class Home extends Component {
                 </div>
                 <div className="content content-center valign-center row" id="message-block">
                     <div className="col-md-5 no-padding">
-                        <div className="label label-danger visible-ie8">
-                            Not supported in Internet Explorer 8
-                        </div>
                         <div id="googlemap" >
                             <div id="maptitle" className="row">
                                 <div className="col-md-10">
