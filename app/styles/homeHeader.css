@@ -1,0 +1,68 @@
+
+/* header at the top */
+.header-top {
+    top: 0;
+    bottom: auto;
+    background: rgba(255,255,255,1);
+}
+/* header on the second screen */
+.header-second-screen {
+    bottom: -63px;/* 61px – header height */
+}
+.header.fixNav {
+    position: fixed;
+    top: 0;
+    bottom: auto;
+    background: rgba(255,255,255,0.95);
+}
+
+.site-logo {
+    float: left;
+}
+
+.header .mobi-toggler {
+    float: right;
+    color: #D8D8D8;
+    border: 1px solid #D8D8D8;
+    border-radius: 100% !important;
+    width: 32px;
+    height: 32px;
+    display: none;
+    margin: 15px 15px 0;
+    position: relative;
+    background: url(../../public/img/toggler.png) no-repeat 6px 8px;
+}
+.header .mobi-toggler i {
+    display: none;
+}
+.header .mobi-toggler:hover {
+    background: #e34f00 url(../../public/img/toggler.png) no-repeat 6px -28px;
+    border-color: #e34f00;
+    color: #fff;
+}
+
+.header-navigation {
+    float: right;
+    list-style: none;
+    padding: 0 0;
+    margin: 0;
+    font: 400 18px "PT Sans Narrow", Arial, sans-serif;
+    text-transform: uppercase;
+}
+.header-navigation li {
+    float: left;
+    padding: 0;
+    margin: 0 0 0 25px;
+}
+.header-navigation a {
+    display: block;
+    color: #78828c;
+}
+.header-navigation a:hover,
+.header-navigation li.current a {
+    color: #e6400c;
+}
+
+.header a:hover {
+    text-decoration: none;
+}

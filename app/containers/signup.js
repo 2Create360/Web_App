@@ -98,7 +98,7 @@ class SignUpForm extends Component {
                                 <Field component = {renderField} type="password" placeholder="Password" name="password"/>
                                 <Field component = {renderField} type="password" placeholder="Confirm Password" name="confirmPassword"/>
                                 <div className="form-actions">
-                                    <button type="submit" className="btn btn-primary btn-block uppercase">Sign Up</button>
+                                    <button type="submit" className="btn btn-primary btn-block noborder">Sign Up</button>
                                 </div>
                             </form>
                         </div>

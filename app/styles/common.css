@@ -1,0 +1,369 @@
+body {
+    color: #000;
+    direction: ltr;
+    font: 300 14px/1.4 "Open Sans", Arial, sans-serif;
+    background: #fff;
+}
+/* h1-h6 */
+.content h1, .content h2 {
+    font: 900 4em "PT Sans Narrow", Arial, sans-serif;
+    margin: 0 0 10px;
+    text-transform: none;
+}
+.content h1:after, .content h2:after {
+    z-index: 2;
+    content: " ";
+    display: block;
+    padding-top: 7px;
+    border-bottom: 2px solid #b7bbbf;
+    width: 73px;
+    margin: 0 auto;
+}
+.content h3, .content h4, .content h5, .content h6 {
+    font: 300 18px "Open Sans", Arial, sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.content h1 strong,
+.content h2 strong,
+.content h3 strong,
+.content h4 strong {
+    color: #e54a1a;
+    font-weight: 300;
+}
+.content h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.content h4 {
+    font-size: 18px;
+}
+.content h5 {
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding-top: 5px;
+}
+.content h6 {
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 700;
+    margin-bottom: 5px;
+    padding-top: 5px;
+}
+/* links styles */
+a, a:focus, a:hover, a:active {
+    color: #e6400c;
+    outline: 0;
+    text-decoration: none;
+}
+a:hover {
+    color: #e6400c;
+    text-decoration: underline;
+}
+
+/* Global classes */
+::-moz-selection {
+    color: #fff;
+    background: #e6400c;
+}
+::selection {
+    color: #fff;
+    background: #e6400c;
+}
+
+.min-hight500 {
+    min-height: 500px;
+}
+
+.lead {
+    font: 400 17px "Open Sans", sans-serif;
+}
+
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    font-size: 0;
+    line-height: 0;
+}
+*html .clearfix {
+    zoom: 1;
+}
+*+html .clearfix {
+    zoom: 1;
+}
+.clear {
+    clear: both;
+    height: 0;
+    font-size: 0;
+    line-height: 0;
+    overflow: hidden;
+}
+.block-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content-center {
+    text-align: center;
+}
+.border-bottom-silver {
+    border-bottom: solid 1px #b7bbbf;
+}
+
+.more-li-space li {
+    margin-bottom: 3px;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+.no-margin {
+    margin: 0 !important;
+}
+.no-bottom-padding {
+    padding-bottom: 0 !important;
+}
+.no-bottom-space {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
+}
+.no-top-padding {
+    padding-top: 0 !important;
+}
+.no-top-space {
+    padding-top: 0 !important;
+    margin-top: 0 !important;
+}
+.no-space {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+.no-text-shadow {
+    text-shadow: none;
+}
+
+.padding-top-5 {
+    padding-top: 5px !important;
+}
+.padding-top-10 {
+    padding-top: 10px !important;
+}
+.padding-top-15 {
+    padding-top: 15px !important;
+}
+.padding-top-20 {
+    padding-top: 20px !important;
+}
+.padding-top-25 {
+    padding-top: 25px !important;
+}
+.padding-top-30 {
+    padding-top: 30px !important;
+}
+.padding-top-35 {
+    padding-top: 35px !important;
+}
+.padding-top-40 {
+    padding-top: 40px !important;
+}
+.padding-top-45 {
+    padding-top: 45px !important;
+}
+.padding-top-50 {
+    padding-top: 50px !important;
+}
+.padding-top-60 {
+    padding-top: 60px !important;
+}
+.padding-top-70 {
+    padding-top: 70px !important;
+}
+.padding-top-80 {
+    padding-top: 80px !important;
+}
+
+.margin-bottom-0 {
+    margin-bottom: 0 !important;
+}
+.margin-bottom-5 {
+    margin-bottom: 5px !important;
+}
+.margin-bottom-10 {
+    margin-bottom: 10px !important;
+}
+.margin-bottom-15 {
+    margin-bottom: 15px !important;
+}
+.margin-bottom-20 {
+    margin-bottom: 20px !important;
+}
+.margin-bottom-25 {
+    margin-bottom: 25px !important;
+}
+.margin-bottom-30 {
+    margin-bottom: 30px !important;
+}
+.margin-bottom-35 {
+    margin-bottom: 35px !important;
+}
+.margin-bottom-40 {
+    margin-bottom: 40px !important;
+}
+.margin-bottom-45 {
+    margin-bottom: 45px !important;
+}
+.margin-bottom-50 {
+    margin-bottom: 50px !important;
+}
+.margin-bottom-60 {
+    margin-bottom: 60px !important;
+}
+.margin-bottom-65 {
+    margin-bottom: 65px !important;
+}
+.margin-bottom-70 {
+    margin-bottom: 70px !important;
+}
+.margin-bottom-80 {
+    margin-bottom: 80px !important;
+}
+.margin-bottom-90 {
+    margin-bottom: 90px !important;
+}
+.margin-bottom-100 {
+    margin-bottom: 100px !important;
+}
+
+.margin-top-10 {
+    margin-top: 10px !important;
+}
+.margin-top-5{
+    margin-top: 5px !important;
+}
+.margin-left-0 {
+    margin-left: 0 !important;
+}
+.margin-right-0 {
+    margin-right: 0 !important;
+}
+
+.margin-right-20 {
+    margin-right: 20px !important;
+}
+.margin-left-20 {
+    margin-left: 20px !important;
+}
+
+.padding-left-0 {
+    padding-left: 0 !important;
+}
+.padding-right-0 {
+    padding-right: 0 !important;
+}
+.padding-right-30 {
+    padding-right: 30px !important;
+}
+.margin-left-10{
+    margin-left:10px !important;
+}
+.padding-bottom-40 {
+    padding-bottom: 40px !important;
+}
+
+.btn {
+    padding: 7px 14px;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-radius: 0;
+}
+
+
+.header {
+    top: auto;
+    left: auto;
+    right: auto;
+    z-index: 9;
+    width: 100%;
+    min-height: 60px;
+    padding: 0;
+    background: rgb(87,156,69);
+    box-shadow: 0 1px 4px rgb(87,156,69);
+    z-index: 9999;
+}
+
+.menu-always-on-top .header {
+    background: #fff;
+    top: 0;
+    bottom: auto;
+    position: fixed;
+}
+
+/* two screen css files*/
+@media (min-width:992px){
+    .signup-form{
+        margin-top:100px;
+        min-width:500px;
+    }
+    .mainContent{
+        min-width:500px;
+    }
+}
+@media(max-width:992px){
+    .signupContent div.col-md-4:first-child{
+        padding-top:100px;
+    }
+}
+.background{
+    background-image:url(../../public/img/signup.jpg);
+    background-size:100% 100%;
+    width:100%;
+    height:500px;
+    margin:auto;
+}
+.mainContent{
+    background-color:rgb(151,98,202);
+    padding-bottom:20px;
+}
+.mainContent h2{
+    font-size:3em;
+}
+.yellowBackground{
+    background-color:rgb(253,154,1);
+}
+.grayBackground{
+    background-color:rgb(230,216,241);
+}
+.whiteBackground{
+    background-color:white;
+}
+.color-gray {
+    background: #798b97;
+}
+.color-turquoise {
+    background: #44b1c1;
+}
+.width100{
+    width:100%;
+}
+.text-yellow{
+    color:rgb(254,248,160);
+}
+.height38{
+    height:38px;
+    line-height:38px;
+}
+.padding33{
+    padding-left: 33px;
+}
+.top20{
+    margin-top:20px;
+}
+.font1_3{
+    font-size:1.3em;
+}

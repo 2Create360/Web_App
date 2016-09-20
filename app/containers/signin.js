@@ -97,7 +97,7 @@ class SignInForm extends Component {
                                 <Field component = {renderField} type="password" placeholder="Password" name="password"/>
                                 {error && <strong>{error}</strong>}
                                 <div className="form-actions">
-                                    <button type="submit" className="btn btn-primary btn-block uppercase">Sign In</button>
+                                    <button type="submit" className="btn btn-primary btn-block noborder">Sign In</button>
                                 </div>
                             </form>
                         </div>

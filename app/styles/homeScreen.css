@@ -1,0 +1,372 @@
+/* Promo block */
+.promo-block {
+    overflow-x: hidden;
+}
+.slider-item-1 .promo-like {
+    color: #fff;
+    background: rgba(0,0,0,0.67);
+    display: inline-block;
+    margin-right: 7px;
+    text-align: left;
+    padding: 35px 22px 25px 21px;
+    position: relative;
+    top: -12px;
+}
+.slider-item-1 .promo-like i {
+    font-size: 80px;
+    line-height: 1;
+}
+.slider-item-1 .promo-like-text {
+    color: #fff;
+    background: rgba(0,0,0,0.67);
+    font: 400 20px/1.4 "PT Sans Narrow", Arial, sans-serif;
+    display: inline-block;
+    text-align: left;
+    padding: 22px 25px 17px;
+}
+.slider-item-1 .promo-like-text h2 {
+    font: 400 38px/38px "PT Sans Narrow", Arial, sans-serif;
+    padding: 0;
+    margin: 0 0 8px;
+}
+.slider-item-1 .promo-like-text p {
+    margin: 0;
+}
+.slider-item-1 .large_bold_white,
+.slider-item-2 .large_bold_white {
+    font: 700 75px/83px "PT Sans Narrow", Arial, sans-serif;
+    text-transform: uppercase;
+}
+.slider-item-1 .large_bold_white span,
+.slider-item-2 .large_bold_white span {
+    color: #e54a1a;
+}
+
+.slider-item-2 .tp-caption.medium_bg_asbestos {
+    background: none;
+}
+.slider-item-2 .mobi-caption {
+    font: 400 70px/70px "PT Sans Narrow", Arial, sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.boxedcontainer {
+    max-width: 1170px;
+    margin:auto;
+    padding:0px 30px;
+}
+.tp-banner-container {
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+.tp-banner {
+    width: 100%;
+    position: relative;
+}
+.tp-banner-fullscreen-container {
+    width: 100%;
+    position: relative;
+    padding: 0;
+}
+.tp-banner-container ul,
+.tp-banner-container li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.tp-bannertimer {
+    background:#777 !important;
+    background:rgba(0,0,0,0.1) !important;
+    height:5px !important;
+}
+
+/* go2top */
+.go2top,
+.go2top:focus {
+    position: fixed;
+    right: 15px;
+    bottom: 8px;
+
+    color: #999;
+    width: 38px;
+    height: 38px;
+
+    border: solid 2px #999;
+    border-radius: 50% !important;
+    text-align: center;
+    padding: 7px 0 0 1px;
+    z-index: 99999;
+
+    font-size: 18px;
+    line-height: 1;
+}
+.go2top:hover {
+    border: solid 2px #e6400c;
+    color: #e6400c;
+}
+.go2top i {
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.fancybox-overlay {
+    z-index: 100000 ;
+}
+
+.fancybox-opened {
+    z-index: 100001;
+}
+
+/***
+Styler Panel
+***/
+/* here you can put your own css to customize and override the theme */
+a, a:focus, a:hover, a:active{
+    font-weight:900;
+}
+#sidebar{
+    padding:0;
+}
+#sidebar .page-sidebar{
+    width:100%;
+}
+#slideContent{
+    padding:10px 0 0 0;
+    background-color:rgb(103,150,191);
+    max-height:630px;
+}
+.page-sidebar-menu li{
+    border-bottom:1px solid #EEE !important;
+}
+.page-sidebar-menu li span{
+    color:#000;
+    font-size:17px;
+}
+#socialButtons{
+    padding-top:30px;
+    border-bottom:0 !important;
+    width:53%;
+    margin:auto;
+}
+.content h1:after, .content h2:after{
+    border-bottom:0;
+}
+#startButtons{
+    position:absolute;
+    z-index:1000;
+    top:10px;
+}
+.btn + .btn{
+    margin-left:-5px;
+}
+.btn{
+    text-transform:none;
+}
+.page-sidebar .page-sidebar-menu > li.active{
+    border-right:3px solid rgb(101,150,191) ;
+}
+.row{
+    margin:0;
+}
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img{
+    width:100%;
+}
+.rightContent{
+    margin-top:70px;
+}
+#maptitle{
+    width:80%;
+    margin:auto;
+    background-color:#fff;
+}
+#googlemap{
+    background-image:url(../../public/img/route.png);
+    padding-top:50px;
+    padding-bottom:30px;
+}
+#gmap_routes{
+    width:80%;
+    margin:auto;
+    height:500px;
+}
+.titleTime{
+    line-height:54px;
+}
+.titleTime.selected{
+    padding:0;
+}
+.titleTime.selected span{
+    background-color:#eee;
+    border:1px solid;
+    border-radius:5px !important;
+    padding:0 5px;
+    color:green;
+}
+#maptitle h3{
+    margin:0;
+}
+.tp-banner-container {
+    width: 100% !important;
+    position: relative;
+    padding: 0;
+    max-height: 630px !important;
+    overflow: hidden;
+}
+#socialButtons a{
+    border-radius:3px !important;
+}
+.page-sidebar-menu li.active span{
+    color:rgb(101,150,191);
+}
+.page-sidebar-menu li:first-child{
+    padding-bottom:30px;
+}
+#startButtons .btn{
+    font-size:20px;
+    padding:20px 40px;
+}
+.hephaistos .tp-bullet{
+    border-radius:50% !important;
+}
+.tp-banner-container{
+    left:0 !important;
+    height:100% !important;
+}
+.forcefullwidth_wrapper_tp_banner{
+    max-height:630px !important;
+}
+.tp-fullwidth-forcer{
+    max-height:630px !important;
+}
+.nav-pos-ver-bottom{
+    top:93% !important;
+}
+#btnUser{
+    background-color: white;
+    font-size: 36px;
+    vertical-align: middle;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50% !important;
+    border: 3px solid black;
+    padding-top: 13px;
+    padding-left: 0;
+    padding-right: 0;
+}
+#btnSetting{
+    background-color: rgb(154,203,78);
+    color:white;
+    font-size: 36px;
+    vertical-align: middle;
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50% !important;
+    padding-top: 8px;
+    padding-left: 1px;
+    padding-right: 0;
+}
+.text-white{
+    color:white;
+}
+.form-title h3{
+    font-size:24px;
+}
+.height100vh{
+    height:100vh;
+}
+.signupContent{
+    background-size:100% 100%;
+    background-color:rgb(87,156,69);
+}
+.signup-form{
+    background-color:rgb(87,156,69);
+    padding:10px;
+}
+
+.borderright{
+    border-right:1px solid #67BD3C;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+    background-color:transparent;
+    border:none;
+    color:#fff;
+}
+.blackBackground{
+    background-color:rgb(59,6,110);
+}
+.noborder{
+    border:none;
+}
+#mainarrwo{
+    width:100%;
+    margin-top:10px;
+}
+#payNow{
+    line-height:30px;
+}
+#payNow span{
+    width:30px;
+    height:30px;
+    line-height:30px;
+    border-radius:50% !important;;
+}
+#profileSection{
+    width:300px;
+}
+#profileContent{
+    width:399px;
+}
+#profileContent p{
+    padding-left:10px;
+    padding-right:10px;
+}
+#profileContent .checkbox{
+    padding-left:35px;
+}
+.signup-form .help-block{
+    color:white;
+}
+li [class^="fa-"], li [class^="glyphicon-"], li [class^="icon-"], li [class*=" fa-"], li [class*=" glyphicon-"], li [class*=" icon-"]{
+    display:inline-block;
+    width:1.25em;
+    text-align:center;
+}
+.social-icons{
+    padding:0;
+    margin:0;
+}
+div, input, select, textarea, span, img, table, label, td, th, p, a, button, ul, code, pre, li{
+    -webkit-border-radius:0 !important;
+    -moz-border-radius:0 !important;
+    border-radius:0 !important;
+}
+.social-icons li{
+    float:left;
+    display:inline;
+    list-style:none;
+    margin-right:5px;
+    margin-bottom:5px;
+    text-indent: -9999px;
+}
+.social-icons li .facebook{
+    background:url(../../public/img/facebook.png) no-repeat;
+}
+.social-icons li .twitter{
+    background:url(../../public/img/twitter.png) no-repeat;
+}
+.social-icons li .linkedin{
+    background:url(../../public/img/linkedin.png) no-repeat;
+}
+.social-icons li .vimeo{
+    background:url(../../public/img/vimeo.png) no-repeat;
+}
+.social-icons li > a{
+    width:28px;
+    height:28px;
+    display: block;
+    -webkit-transition: all 0.3s ease-in-out;
+}
