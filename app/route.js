@@ -1,12 +1,12 @@
 import React from 'react'
 import { Route } from 'react-router'
-import App from './pages/app'
-import Home from './pages/home'
-import SignUp from './pages/signup'
-import SignIn from './pages/signin'
-import Ticket from './pages/ticket'
-import Payment from './pages/payment'
-import PaymentConfirm from './pages/paymentconfirm'
+import App from './containers/app'
+import Home from './containers/home'
+import SignUp from './containers/signup'
+import SignIn from './containers/signin'
+import Ticket from './containers/ticket'
+import Payment from './containers/payment'
+import PaymentConfirm from './containers/paymentconfirm'
 
 export default (
     <Route component={App}>
