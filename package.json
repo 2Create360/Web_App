@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "on-it web application",
   "main": "index.js",
-  //"heroku-prebuild": "npm install babel-cli cross-env -g",
   "scripts": {
     "clean": "rm -rf build public/bundle.js",
     "heroku-postbuild": "babel server --out-dir build --presets=es2015 && webpack",
