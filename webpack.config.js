@@ -31,8 +31,14 @@ module.exports = {
                 test: /\.css$/,
                 loader: 'style!css-loader'
             },
-            { test   : /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/, loader : 'file-loader' },
-            { test: /bootstrap.+\.(jsx|js)$/, loader: 'imports?jQuery=jquery,$=jquery,this=>window' },
+            {
+                test: /\.(ttf|eot|svg|woff(2)?)(\?[a-z0-9=&.]+)?$/,
+                loader : 'file-loader'
+            },
+            {
+                test: /bootstrap.+\.(jsx|js)$/,
+                loader: 'imports?jQuery=jquery,$=jquery,this=>window'
+            },
             {
                 test: /\.(jpe?g|png|gif|svg)$/i,
                 loaders: [
