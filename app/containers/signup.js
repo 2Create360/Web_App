@@ -5,6 +5,8 @@ import {signUpUser, signUpUserSuccess, signUpUserFailure, resetUser,
     validateUserFields,validateUserFieldsSuccess,validateUserFieldsFailure,
     resetValidateUserFields } from '../actions/users';
 import { Link } from 'react-router'
+import signHeader from '../components/signheader';
+import socialLogin from '../components/sociallogin';
 
 //Client side validation
 function validate(values) {
@@ -82,41 +84,7 @@ class SignUpForm extends Component {
 
         return (
             <div className="mainBackground">
-                <div className="page-header md-shadow-z-1-i navbar navbar-fixed-top">
-                    <div className="page-header-inner">
-                        <div className="page-logo">
-                            <Link to="/">
-                                <img src="img/global/logo.png" style={{width: 97, height: 26}}alt="logo" className="logo-default"></img>
-                            </Link>
-                            <div className="menu-toggler sidebar-toggler hide">
-                            </div>
-                        </div>
-                        <div className="top-menu">
-                            <ul className="nav navbar-nav pull-right">
-                                <li className="dropdown dropdown-extended dropdown-tasks"><span style={{lineHeight:46+'px',color:"white"}}>Welcome</span></li>
-                                <li className="dropdown dropdown-user">
-                                    <a href="javascript:;" className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                        <img src="img/sign/icon-color.png" ></img>
-                                    </a>
-                                    <ul className="dropdown-menu dropdown-menu-default" style={{float:'none',right:0+'px',left:'inherit',backgroundColor:'#ffffff'}}>
-                                        <li>
-                                            <Link to="/">
-                                                <i className="icon-user"><img src="img/sign/pwicon.png" ></img></i> Modify Password </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/">
-                                                <i className="icon-calendar"><img src="img/sign/money.png" style={{width:"20px", height:"20px"}}></img></i> Payment Information </Link>
-                                        </li>
-                                        <li>
-                                            <Link to="/">
-                                                <i className="icon-envelope-open"><img src="img/sign/mobile.png" style={{width:"20px", height:"20px"}}></img></i> Accound and Mobile </Link>
-                                        </li>
-                                    </ul>
-                                </li>
-                            </ul>
-                    </div>
-                    </div>
-                </div>
+                <signHeader/>
                 <div className="clearfix">
                 </div>
                 <div className="page-container">
@@ -130,7 +98,7 @@ class SignUpForm extends Component {
                                                 <div className="form-top">
                                                     <div className="form-top-left">
                                                         <h3 id="signHeader">Create your account</h3>
-                                                        <p>Enter your Email adress and password to Signin:</p>
+                                                        <p>Enter your Email adress and password to Signup:</p>
                                                     </div>
                                                     <div className="form-top-right">
                                                         <i className="fa fa-key"></i>
@@ -146,25 +114,9 @@ class SignUpForm extends Component {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="row">
-                                            <div className="col-sm-6 col-sm-offset-3 social-login">
-                                                <h3>...or login with:</h3>
-                                                <div className="social-login-buttons">
-                                                    <a className="btn btn-link-1 btn-link-1-facebook" href="#">
-                                                        <i className="fa fa-facebook"></i> Facebook
-                                                    </a>
-                                                    <a className="btn btn-link-1 btn-link-1-twitter" href="#">
-                                                        <i className="fa fa-twitter"></i> Twitter
-                                                    </a>
-                                                    <a className="btn btn-link-1 btn-link-1-google-plus" href="#">
-                                                        <i className="fa fa-google-plus"></i> Google Plus
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <socialLogin/>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>

@@ -1,11 +1,10 @@
-/**
- * Created by Butterfly on 9/16/2016.
- */
 import React, { Component, PropTypes } from 'react'
 import { Field, SubmissionError, reduxForm } from 'redux-form'
 import {connect} from 'react-redux';
 import {signInUser, signInUserSuccess, signInUserFailure} from '../actions/users';
 import { Link } from 'react-router'
+import signHeader from '../components/signheader';
+import socialLogin from '../components/sociallogin';
 
 
 //Client side validation
@@ -80,31 +79,45 @@ class SignInForm extends Component {
         const { error, handleSubmit, pristine, reset, submitting } = this.props;
 
         return (
-            <div>
-                <div className="row header">
-                    <div className="col-md-2 col-sm-2">
-                        <Link className="scroll site-logo" to="/">
-                            <img src="img/global/logo.png" alt="On-it"></img></Link>
-                    </div>
+            <div className="mainBackground">
+                <signHeader/>
+                <div className="clearfix">
                 </div>
-                <div className="content height100vh signupContent">
-                    <div className="background">
-                        <div className="col-md-4 col-md-offset-4">
-                            <form className="signup-form" onSubmit={handleSubmit(signInUserHandler)}>
-                                <div className="form-title">
-                                    <h3 className="text-center text-white">Login</h3></div>
-                                <Field component={renderField} type="email" placeholder="Email Address" name="email"/>
-                                <Field component = {renderField} type="password" placeholder="Password" name="password"/>
-                                {error && <strong>{error}</strong>}
-                                <div className="form-actions">
-                                    <button type="submit" className="btn btn-primary btn-block noborder">Sign In</button>
+                <div className="page-container">
+                    <div style={{margin: 0,float:'none'}}>
+                        <div className="page-content">
+                            <div className="top-content">
+                                <div className="inner-bg">
+                                    <div className="container signContent">
+                                        <div className="row">
+                                            <div className="col-sm-6 col-sm-offset-3 form-box ">
+                                                <div className="form-top">
+                                                    <div className="form-top-left">
+                                                        <h3 id="signHeader">Create your account</h3>
+                                                        <p>Enter your Email adress and password to Signup:</p>
+                                                    </div>
+                                                    <div className="form-top-right">
+                                                        <i className="fa fa-key"></i>
+                                                    </div>
+                                                </div>
+                                                <div className="form-bottom">
+                                                    <form role="form" onSubmit={handleSubmit(signInUserHandler)} method="post" className="login-form">
+                                                        <Field component={renderField} type="email" placeholder="Email Address" name="email"/>
+                                                        <Field component = {renderField} type="password" placeholder="Password" name="password"/>
+                                                            {error && <strong>{error}</strong>}
+                                                        <button type="submit" className="btn">Sign in!</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <socialLogin/>
+                                    </div>
                                 </div>
-                            </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
         )
     }
 }
