@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router'
 
-class socialLogin extends React.Component{
+class SocialLogin extends React.Component{
     render(){
         return(
             <div className="row">
@@ -23,4 +23,4 @@ class socialLogin extends React.Component{
         )
     }
 }
-export default socialLogin;
+export default SocialLogin;

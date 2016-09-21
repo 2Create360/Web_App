@@ -5,8 +5,8 @@ import {signUpUser, signUpUserSuccess, signUpUserFailure, resetUser,
     validateUserFields,validateUserFieldsSuccess,validateUserFieldsFailure,
     resetValidateUserFields } from '../actions/users';
 import { Link } from 'react-router'
-import signHeader from '../components/signheader';
-import socialLogin from '../components/sociallogin';
+import SignHeader from '../components/signheader';
+import SocialLogin from '../components/sociallogin';
 
 //Client side validation
 function validate(values) {
@@ -84,7 +84,7 @@ class SignUpForm extends Component {
 
         return (
             <div className="mainBackground">
-                <signHeader/>
+                <SignHeader/>
                 <div className="clearfix">
                 </div>
                 <div className="page-container">
@@ -98,7 +98,7 @@ class SignUpForm extends Component {
                                                 <div className="form-top">
                                                     <div className="form-top-left">
                                                         <h3 id="signHeader">Create your account</h3>
-                                                        <p>Enter your Email adress and password to Signup:</p>
+                                                        <p>Enter your Email address and password to Signup:</p>
                                                     </div>
                                                     <div className="form-top-right">
                                                         <i className="fa fa-key"></i>
@@ -114,7 +114,7 @@ class SignUpForm extends Component {
                                                 </div>
                                             </div>
                                         </div>
-                                        <socialLogin/>
+                                        <SocialLogin/>
                                     </div>
                                 </div>
                             </div>

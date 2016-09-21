@@ -1,7 +1,7 @@
 import React from 'react'
 import {Link} from 'react-router'
 
-class signHeader extends React.Component{
+class SignHeader extends React.Component{
     render() {
         return (
             <div className="page-header md-shadow-z-1-i navbar navbar-fixed-top">
@@ -51,4 +51,4 @@ class signHeader extends React.Component{
         )
     }
 }
-export default signHeader;
+export default SignHeader;
