@@ -13,7 +13,7 @@ class Ticket extends Component {
         return (
             <div className="mainBackground">
                 <Header/>
-                <div className="page-container">
+                <div className="page-container margin-top-46">
                     <div className="page-content-wrapper col-md-6 col-xs-12" style={{margin:'0 auto',float:'none'}}>
                         <div className="page-content">
                             <div className="row">

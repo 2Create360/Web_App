@@ -4,18 +4,6 @@ import { Link } from 'react-router'
 class BuyTicket extends React.Component{
     constructor(props) {
         super(props);
-        this.state = {
-            route: "",
-            quantity: "",
-            ticketCost:"",
-            totalCost:"",
-            volumeDiscount:"",
-            total:"",
-            gstPercent:"",
-            amount:""
-        };
-
-        this.handleChange = this.handleChange.bind(this);
     }
 
     handleChange(e) {

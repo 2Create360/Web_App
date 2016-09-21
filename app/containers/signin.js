@@ -107,8 +107,6 @@ class SignInForm extends Component {
 
         )
     }
-
-
 }
 
 function mapStateToProps(state, ownProps) {
