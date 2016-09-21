@@ -6,16 +6,16 @@ class BuyTicket extends React.Component{
     render(){
         return(
             <div className="tab-pane" id="tab_2">
-                <h1>E-TICKET WALLET</h1><br/>
+                <h1 className="text-black">E-TICKET WALLET</h1><br/>
                 <div className="col-md-12">
                     <div className="tickets_topbg"></div>
                     <div className="tickets_mdbg">
                         <div className="row">
                             <div className="col-xs-4 text-center">
-                                <img src="img/bus.png" style={{marginTop:'15px', width:'100%', maxWidth:'186px'}}/>
+                                <img src="img/ticket/bus.png" className="margin-top-15 width100" style={{maxWidth:'186px'}}/>
                             </div>
                             <div className="col-xs-8">
-                                <div className="custom-dropdown small text-center"  style={{display:'block'}}>
+                                <div className="custom-dropdown small text-center show" >
                                     <select className="glyphicon glyphicon-triangle-bottom text-center" id="buyTicketSelect">
                                         <option>Filter by Route</option>
                                         <option>The Great Gatsby</option>
@@ -43,7 +43,7 @@ class BuyTicket extends React.Component{
                             <div className="col-md-4 text-center">
                             </div>
                             <div className="col-md-8 margin-top-10 text-right payBtn">
-                                <a href="#" className="w3-btn w3-margin-bottom">Pay Now</a>
+                                <Link to="/" className="w3-btn w3-margin-bottom text-white">Pay Now</Link>
                             </div>
                         </div>
                     </div>
