@@ -11,7 +11,7 @@ class Ticket extends Component {
 
     render() {
         return (
-            <div className="mainBackground">
+            <div className="mainBackground ticketPage">
                 <Header/>
                 <div className="page-container margin-top-46">
                     <div className="page-content-wrapper col-md-6 col-xs-12" style={{margin:'0 auto',float:'none'}}>

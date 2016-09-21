@@ -5,8 +5,8 @@ class UsedTicket extends React.Component{
             <div className="tab-pane" id="tab_3">
                 <h1>E-TICKET WALLET</h1>
                 <div>
-                    <h3 style={{float:'left', display:'table'}}>History past 4 monthd</h3>
-                    <span className="custom-dropdown small" style={{float:'right'}}>
+                    <h3 className="text-black" className="pull-left" style={{display:'table'}}>History past 4 monthd</h3>
+                    <span className="custom-dropdown small pull-right">
 										<select>
 											<option>Filter by Route</option>
 											<option>The Great Gatsby</option>

@@ -7,9 +7,9 @@ class Header extends React.Component{
             <div className="page-header md-shadow-z-1-i navbar navbar-fixed-top">
                 <div className="page-header-inner">
                     <div className="page-logo">
-                        <a href="index.html">
+                        <Link to="/">
                             <img src="img/global/logo.png" alt="logo" style={{width:97,height:26}} className="logo-default"/>
-                        </a>
+                        </Link>
                         <div className="menu-toggler sidebar-toggler hide">
                         </div>
                     </div>

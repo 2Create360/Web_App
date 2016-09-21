@@ -123,7 +123,7 @@
 Styler Panel
 ***/
 /* here you can put your own css to customize and override the theme */
-a, a:focus, a:hover, a:active{
+.home.a, .home.a:focus, .home.a:hover, .home.a:active{
     font-weight:900;
 }
 #sidebar{
@@ -337,7 +337,7 @@ li [class^="fa-"], li [class^="glyphicon-"], li [class^="icon-"], li [class*=" f
     padding:0;
     margin:0;
 }
-div, input, select, textarea, span, img, table, label, td, th, p, a, button, ul, code, pre, li{
+.home div, .home input, .home select, .home textarea, .home span, .home img, .home table, .home label, .home td, .home th, .home p, .home a, .home button, .home ul, .home code, .home pre, .home li{
     -webkit-border-radius:0 !important;
     -moz-border-radius:0 !important;
     border-radius:0 !important;
@@ -384,4 +384,3 @@ div, input, select, textarea, span, img, table, label, td, th, p, a, button, ul,
         display: block !important;
     }
 }
-

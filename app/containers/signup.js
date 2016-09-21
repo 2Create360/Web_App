@@ -85,9 +85,9 @@ class SignUpForm extends Component {
                 <div className="page-header md-shadow-z-1-i navbar navbar-fixed-top">
                     <div className="page-header-inner">
                         <div className="page-logo">
-                            <a href="/">
+                            <Link to="/">
                                 <img src="img/global/logo.png" style={{width: 97, height: 26}}alt="logo" className="logo-default"></img>
-                            </a>
+                            </Link>
                             <div className="menu-toggler sidebar-toggler hide">
                             </div>
                         </div>
@@ -100,16 +100,16 @@ class SignUpForm extends Component {
                                     </a>
                                     <ul className="dropdown-menu dropdown-menu-default" style={{float:'none',right:0+'px',left:'inherit',backgroundColor:'#ffffff'}}>
                                         <li>
-                                            <a href="/">
-                                                <i className="icon-user"><img src="img/sign/pwicon.png" ></img></i> Modify Password </a>
+                                            <Link to="/">
+                                                <i className="icon-user"><img src="img/sign/pwicon.png" ></img></i> Modify Password </Link>
                                         </li>
                                         <li>
-                                            <a href="/">
-                                                <i className="icon-calendar"><img src="img/sign/money.png" style={{width:"20px", height:"20px"}}></img></i> Payment Information </a>
+                                            <Link to="/">
+                                                <i className="icon-calendar"><img src="img/sign/money.png" style={{width:"20px", height:"20px"}}></img></i> Payment Information </Link>
                                         </li>
                                         <li>
-                                            <a href="/">
-                                                <i className="icon-envelope-open"><img src="img/sign/mobile.png" style={{width:"20px", height:"20px"}}></img></i> Accound and Mobile </a>
+                                            <Link to="/">
+                                                <i className="icon-envelope-open"><img src="img/sign/mobile.png" style={{width:"20px", height:"20px"}}></img></i> Accound and Mobile </Link>
                                         </li>
                                     </ul>
                                 </li>
