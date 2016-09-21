@@ -4,114 +4,39 @@ import {Link} from 'react-router'
 class Header extends React.Component{
     render(){
         return(
-            <div className="row header ">
-                <div className="col-md-2 col-sm-2">
-                    <Link className="site-logo" to="/"><img src="img/global/logo.png" style={{height: 60+'px'}} alt="On-it" /></Link>
-                </div>
-                <div className="col-md-10 col-sm-10 text-right">
-                    <ul className="nav navbar-nav pull-right">
-                        <li>
-                            <a href="#" className="btn-transparent no-bottom-padding no-top-padding" data-toggle="collapse" data-target="#profileContent">
-                                <span className="fa fa-user" id="btnSetting"></span>
-                            </a>
-                            <ul id="profileContent" className="collapse dropdown-menu">
-                                <h2 className="text-center"><strong>Your Profile</strong></h2>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elt. Nulla
-                                    quam velit, vulputate eu pharetra nec, mattls ac neque. Duls vulputate commodo lectus, ac blandlt elit tincidunt id. Sed rhoncus, tortor sed eleifend tristique, tortor mauris molestie elit,
-                                    et lacinia ipsum quam nec dul. Quisque nec mauris slt amet elt
-                                </p>
-                                <div className="row">
-                                    <div className="col-md-6">
-                                        <input type="text" placeholder="First Name"/>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <input type="text" placeholder="Last Name"/>
-                                    </div>
-                                </div>
-                                <div className="row">&nbsp;</div>
-                                <div className="row">
-                                    <div className="col-md-6">
-                                        <select className="width100" placeholder="Your location">
-                                            <option>Mustard</option>
-                                            <option>Ketchup</option>
-                                            <option>Relish</option>
-                                        </select>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <input type="text" placeholder="Email Address"/>
-                                    </div>
-                                </div>
-                                <div className="row">&nbsp;</div>
-
-                                <div className="row">
-                                    <div className="col-md-6">
-                                        <input type="text" placeholder="Postal Code"/>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <input type="text" placeholder="Home Phone"/>
-                                    </div>
-                                </div>
-                                <div className="row">&nbsp;</div>
-
-                                <div className="row">
-                                    <div className="col-md-6">
-                                        <select className="width100" placeholder="Age Range">
-                                            <option>Mustard</option>
-                                            <option>Ketchup</option>
-                                            <option>Relish</option>
-                                        </select>
-                                    </div>
-                                    <div className="col-md-6">
-                                        <select className="width100" placeholder="Age Range">
-                                            <option>Mustard</option>
-                                            <option>Ketchup</option>
-                                            <option>Relish</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="checkbox">
-                                        <label>
-                                            <input type="checkbox" /> Participate in Feedback surveys
-                                        </label>
-                                    </div>
-                                </div>
-                            </ul>
-
-                        </li>
-                        <li className="dropdown dropdown-extended " id="header_notification_bar">
-                            <a href="javascript:;" className="dropdown-toggle no-bottom-padding no-top-padding" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                                    <span className="fa fa-cog" id="btnSetting">
-                                     </span>
-                            </a>
-                            <ul className="dropdown-menu">
-                                <div className="dropdown-menu-list " style={{height: 105+'px'}} data-handle-color="#637283">
+            <div className="page-header md-shadow-z-1-i navbar navbar-fixed-top">
+                <div className="page-header-inner">
+                    <div className="page-logo">
+                        <a href="index.html">
+                            <img src="img/global/logo.png" alt="logo" style={{width:97,height:26}} className="logo-default"/>
+                        </a>
+                        <div className="menu-toggler sidebar-toggler hide">
+                        </div>
+                    </div>
+                    <div className="top-menu">
+                        <ul className="nav navbar-nav pull-right">
+                            <li className="dropdown dropdown-extended dropdown-tasks"><span style={{lineHeight: 46+'px', color:'white'}}>Welcome</span></li>
+                            <li className="dropdown dropdown-user">
+                                <a href="" className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                    <img src="img/sign/icon-color.png" />
+                                </a>
+                                <ul className="dropdown-menu dropdown-menu-default" style={{float:'none',right:0,left: 'inherit',backgroundColor:'#ffffff'}}>
                                     <li>
-                                        <a href="javascript:;">
-                                                <span className="details">
-                                                <i className="fa fa-circle"></i>
-                                                MODIFY PASSWORD </span>
-                                        </a>
+                                        <a href="extra_profile.html">
+                                            <i className="icon-user"><img src="img/sign/pwicon.png" /></i> Modify Password </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:;">
-                                                <span className="details">
-                                                <i className="fa fa-info"></i>
-                                                PAYMENT INFORMATION </span>
-                                        </a>
+                                        <a href="page_calendar.html">
+                                            <i className="icon-calendar"><img src="img/sign/money.png" style={{width:20, height:20}}/></i> Payment Information </a>
                                     </li>
                                     <li>
-                                        <a href="javascript:;">
-                                                <span className="details">
-                                                <i className="fa fa-mobile"></i>
-                                                ACCOUNT AND MOBILE </span>
-                                        </a>
+                                        <a href="inbox.html">
+                                            <i className="icon-envelope-open"><img src="img/sign/mobile.png" style={{width:20, height:20}}/></i> Accound and Mobile </a>
                                     </li>
-                                </div>
-                            </ul>
-                        </li>
-                    </ul>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         )

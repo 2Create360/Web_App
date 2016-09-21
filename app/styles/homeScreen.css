@@ -278,10 +278,6 @@ a, a:focus, a:hover, a:active{
 .height100vh{
     height:100vh;
 }
-.signupContent{
-    background-size:100% 100%;
-    background-color:rgb(87,156,69);
-}
 .signup-form{
     background-color:rgb(87,156,69);
     padding:10px;
@@ -290,7 +286,9 @@ a, a:focus, a:hover, a:active{
 .borderright{
     border-right:1px solid #67BD3C;
 }
-.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover{
+.home .nav-tabs>li.active>a,
+.home .nav-tabs>li.active>a:focus,
+.home .nav-tabs>li.active>a:hover{
     background-color:transparent;
     border:none;
     color:#fff;

@@ -314,11 +314,6 @@ a:hover {
         min-width:500px;
     }
 }
-@media(max-width:992px){
-    .signupContent div.col-md-4:first-child{
-        padding-top:100px;
-    }
-}
 .background{
     background-image:url(../../public/img/signup.jpg);
     background-size:100% 100%;

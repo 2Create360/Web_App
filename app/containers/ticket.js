@@ -11,20 +11,35 @@ class Ticket extends Component {
 
     render() {
         return (
-            <div>
+            <div className="mainBackground">
                 <Header/>
-                <div className="content height100vh signupContent">
-                    <div className="background">
-                        <div className="col-md-4 col-md-offset-4 mainContent">
-                            <ul className="nav nav-tabs blackBackground noborder">
-                                <li className="col-md-4 col-xs-4 text-center active"><a data-toggle="tab" href="#home">Available Tickets</a></li>
-                                <li className="col-md-4 col-xs-4 text-center"><a data-toggle="tab" href="#butyticket">Buy tickets</a></li>
-                                <li className="col-md-4 col-xs-4 text-center"><a data-toggle="tab" href="#menu2">Used tickets</a></li>
-                            </ul>
-                            <div className="tab-content">
-                                <AvailableTicket />
-                                <BuyTicket/>
-                                <UsedTicket/>
+                <div className="page-container">
+                    <div className="page-content-wrapper col-md-6 col-xs-12" style={{margin:'0 auto',float:'none'}}>
+                        <div className="page-content">
+                            <div className="row">
+                                <div className="col-md-12">
+                                    <div className="tabbable-line boxless">
+                                        <ul className="nav nav-tabs" style={{borderBottom:1+'px solid#fff'}}>
+                                            <li className="active">
+                                                <a href="#tab_1" data-toggle="tab">
+                                                    Avaiable Tickets</a>
+                                            </li>
+                                            <li>
+                                                <a href="#tab_2" data-toggle="tab">
+                                                    Buy Tickets</a>
+                                            </li>
+                                            <li>
+                                                <a href="#tab_3" data-toggle="tab">
+                                                    Used Tickets</a>
+                                            </li>
+                                        </ul>
+                                        <div className="tab-content">
+                                            <AvailableTicket />
+                                            <BuyTicket/>
+                                            <UsedTicket/>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

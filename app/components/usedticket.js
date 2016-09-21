@@ -2,42 +2,106 @@ import React from 'react';
 class UsedTicket extends React.Component{
     render(){
         return(
-            <div id="menu2" className="tab-pane fade">
-                <h2 className="text-center text-white font3em">E-TICKET WALLET</h2>
-                <div className="ticketHistory">
-                    <table className="table table-bordered whiteBackground text-center" id="datatable_ajax">
-                        <thead>
-                        <tr role="row" className="heading">
-                            <th className="text-center" width="5%">
-                                Route
-                            </th>
-                            <th className="text-center" width="15%">
-                                Frome
-                            </th>
-                            <th className="text-center" width="15%">
-                                To
-                            </th>
-                            <th className="text-center" width="10%">
-                                Date
-                            </th>
+            <div className="tab-pane" id="tab_3">
+                <h1>E-TICKET WALLET</h1>
+                <div>
+                    <h3 style={{float:'left', display:'table'}}>History past 4 monthd</h3>
+                    <span className="custom-dropdown small" style={{float:'right'}}>
+										<select>
+											<option>Filter by Route</option>
+											<option>The Great Gatsby</option>
+											<option>V for Vendetta</option>
+											<option>The Wolf of Wallstreet</option>
+											<option>Quantum of Solace</option>
+										</select>
+									</span>
+                </div>
+                <div>
+                    <table className="customers">
+                        <tr>
+                            <th>Date/Time</th>
+                            <th>Route</th>
+                            <th>From</th>
+                            <th>To</th>
                         </tr>
-                        <tr role="row" className="filter">
-                            <td>
-                                Route 2
-                            </td>
-                            <td>
-                                Nanton
-                            </td>
-                            <td>
-                                Chochrane
-                            </td>
-                            <td>
-                                02/05/2016 3:15 pm
-                            </td>
+                        <tr>
+                            <td>13:20/09/19/2016</td>
+                            <td>Route1</td>
+                            <td>Nanton</td>
+                            <td>Chochrane</td>
                         </tr>
-                        </thead>
-                        <tbody>
-                        </tbody>
+                        <tr>
+                            <td>13:20/09/19/2016</td>
+                            <td>Route1</td>
+                            <td>Nanton</td>
+                            <td>Chochrane</td>
+                        </tr>
+                        <tr>
+                            <td>13:20/09/19/2016</td>
+                            <td>Route1</td>
+                            <td>Nanton</td>
+                            <td>Chochrane</td>
+                        </tr>
+                        <tr>
+                            <td>13:20/09/19/2016</td>
+                            <td>Route1</td>
+                            <td>Nanton</td>
+                            <td>Chochrane</td>
+                        </tr>
+                        <tr>
+                            <td>13:20/09/19/2016</td>
+                            <td>Route1</td>
+                            <td>Nanton</td>
+                            <td>Chochrane</td>
+                        </tr>
+                        <tr>
+                            <td>13:20/09/19/2016</td>
+                            <td>Route1</td>
+                            <td>Nanton</td>
+                            <td>Chochrane</td>
+                        </tr>
+                        <tr>
+                            <td>13:20/09/19/2016</td>
+                            <td>Route1</td>
+                            <td>Nanton</td>
+                            <td>Chochrane</td>
+                        </tr>
+                        <tr>
+                            <td>13:20/09/19/2016</td>
+                            <td>Route1</td>
+                            <td>Nanton</td>
+                            <td>Chochrane</td>
+                        </tr>
+                        <tr>
+                            <td>13:20/09/19/2016</td>
+                            <td>Route1</td>
+                            <td>Nanton</td>
+                            <td>Chochrane</td>
+                        </tr>
+                        <tr>
+                            <td>13:20/09/19/2016</td>
+                            <td>Route1</td>
+                            <td>Nanton</td>
+                            <td>Chochrane</td>
+                        </tr>
+                        <tr>
+                            <td>13:20/09/19/2016</td>
+                            <td>Route1</td>
+                            <td>Nanton</td>
+                            <td>Chochrane</td>
+                        </tr>
+                        <tr>
+                            <td>13:20/09/19/2016</td>
+                            <td>Route1</td>
+                            <td>Nanton</td>
+                            <td>Chochrane</td>
+                        </tr>
+                        <tr>
+                            <td>13:20/09/19/2016</td>
+                            <td>Route1</td>
+                            <td>Nanton</td>
+                            <td>Chochrane</td>
+                        </tr>
                     </table>
                 </div>
             </div>

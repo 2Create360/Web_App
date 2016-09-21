@@ -9,7 +9,7 @@ class Home extends Component {
 
     render() {
         return (
-            <div>
+            <div className="home">
                 <div className="promo-block" id="promo-block">
                     <div className="row">
                         <a href="javascript:;" className="menu-toggler responsive-toggler" data-toggle="collapse" data-target=".navbar-collapse">

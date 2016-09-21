@@ -26,85 +26,52 @@ class BuyTicket extends React.Component{
 
     render(){
         return(
-            <div id="butyticket" className="tab-pane fade">
-                <h2 className="text-center text-white font3em">E-TICKET WALLET</h2>
-                <div className="row">
-                    <select className="width100 height38">
-                        <option value="1">Chocraine Airdre Route 4</option>
-                        <option value="2">BlackDiamond Nanton R5</option>
-                        <option value="3">High river Calgary R6</option>
-                    </select>
-                </div>
-                <div className="row top20">
-                    <div className="col-md-6 col-xs-6 no-padding">
-                        <h4 className="text-white">Qty of Tickets</h4>
-                        <input type="Number" className="height38 width100" max="200" placeholder="QUANTITY OF TICKETS"/>
-                    </div>
-                    <div className="col-md-6 col-xs-6">
+            <div className="tab-pane" id="tab_2">
+                <h1>E-TICKET WALLET</h1><br/>
+                <div className="col-md-12">
+                    <div className="tickets_topbg"></div>
+                    <div className="tickets_mdbg">
                         <div className="row">
-                            <div className="col-md-8 col-xs-8 text-yellow">
-                                <strong>PerTicket cost:</strong>
+                            <div className="col-xs-4 text-center">
+                                <img src="img/bus.png" style={{marginTop:'15px', width:'100%', maxWidth:'186px'}}/>
                             </div>
-                            <div className="col-md-4 col-xs-4  text-yellow">
-                                <strong>$2.50</strong>
+                            <div className="col-xs-8">
+                                <div className="custom-dropdown small text-center"  style={{display:'block'}}>
+                                    <select className="glyphicon glyphicon-triangle-bottom text-center" id="buyTicketSelect">
+                                        <option>Filter by Route</option>
+                                        <option>The Great Gatsby</option>
+                                        <option>V for Vendetta</option>
+                                        <option>The Wolf of Wallstreet</option>
+                                        <option>Quantum of Solace</option>
+                                    </select>
+                                </div>
+                                <div className="">
+                                    <h1 id="buyTicketHeader" className="text-right">TICKET</h1>
+                                </div>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-md-8 col-xs-8 text-yellow">
-                                <strong>Total Cost:</strong>
+                            <div className="col-md-4 text-center">
+                                <p className="text-center" id="buyQuantityLabel"><strong>Qty of Tickets</strong></p>
+                                <input className="form-control marginAuto width60" type="number" value="33"/>
                             </div>
-                            <div className="col-md-4 col-xs-4  text-yellow">
-                                <strong>$2.50</strong>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md-8 col-xs-8 text-yellow">
-                                <strong>Volume Discount:</strong>
-                            </div>
-                            <div className="col-md-4 col-xs-4  text-yellow">
-                                <strong>$2.50</strong>
+                            <div className="col-md-8 margin-top-25" style={{fontSize:'2em', color:'#61a31b'}}>
+                                <span className="pull-left"><strong>Total Cost : </strong></span>
+                                <span className="pull-right"><strong>$55</strong></span>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-md-8 col-xs-8 text-yellow">
-                                <strong>Total:</strong>
+                            <div className="col-md-4 text-center">
                             </div>
-                            <div className="col-md-4 col-xs-4  text-yellow">
-                                <strong>$25.00</strong>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md-8 col-xs-8 text-yellow">
-                                <strong>GST:(5%)</strong>
-                            </div>
-                            <div className="col-md-4 col-xs-4  text-yellow">
-                                <strong>$1.00</strong>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-md-8 col-xs-8 text-yellow">
-                                <strong>Amount Due</strong>
-                            </div>
-                            <div className="col-md-4 col-xs-4  text-yellow">
-                                <strong>$26.00</strong>
+                            <div className="col-md-8 margin-top-10 text-right payBtn">
+                                <a href="#" className="w3-btn w3-margin-bottom">Pay Now</a>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div className="row padding33">
-                    <div className="checkbox">
-                        <label className="text-white">
-                            <input type="checkbox" /> August Month Pass(Unlimited Use)
-                        </label>
-                    </div>
-                </div>
-                <div className="row text-center">
-                    <Link type="button" to="/payment" className="btn whiteBackground " value="Pay Now" id="payNow">Continue
-                        <span className="glyphicon glyphicon glyphicon-arrow-right pull-right text-white btn-primary"></span>
-                    </Link>
+                    <div className="tickets_btbg"></div>
                 </div>
             </div>
-        )
+    )
     }
 }
 export default BuyTicket;

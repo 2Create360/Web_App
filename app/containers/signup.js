@@ -50,10 +50,10 @@ function signUpUserHandler(values, dispatch) {
             });
 };
 
-const renderField = ({ input, label, placeholder, type, meta: { touched, error } }) => (
+const renderField = ({ input, label,id, placeholder, type, meta: { touched, error } }) => (
     <div className={`form-group ${touched && error ? 'has-error' : ''}`}>
-        <label className="control-label">{label}</label>
-        <input type={type} className="form-control form-control-solid placeholder-no-fix" {...input} placeholder={placeholder}/>
+        <label className="sr-only">{label}</label>
+        <input type={type} className="form-control " {...input} id={id} placeholder={placeholder}/>
         <div className="help-block">
             {touched ? error : ''}
         </div>
@@ -81,31 +81,91 @@ class SignUpForm extends Component {
         const { error, handleSubmit, pristine, reset, submitting } = this.props;
 
         return (
-            <div>
+            <div className="mainBackground">
                 <div className="page-header md-shadow-z-1-i navbar navbar-fixed-top">
                     <div className="page-header-inner">
                         <div className="page-logo">
-                            <a href="index.html">
-                                <img src="img/global/logo.png" style={{width: 200, height: 200}}alt="logo" className="logo-default"></img>
+                            <a href="/">
+                                <img src="img/global/logo.png" style={{width: 97, height: 26}}alt="logo" className="logo-default"></img>
                             </a>
                             <div className="menu-toggler sidebar-toggler hide">
                             </div>
                         </div>
+                        <div className="top-menu">
+                            <ul className="nav navbar-nav pull-right">
+                                <li className="dropdown dropdown-extended dropdown-tasks"><span style={{lineHeight:46+'px',color:"white"}}>Welcome</span></li>
+                                <li className="dropdown dropdown-user">
+                                    <a href="javascript:;" className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+                                        <img src="img/sign/icon-color.png" ></img>
+                                    </a>
+                                    <ul className="dropdown-menu dropdown-menu-default" style={{float:'none',right:0+'px',left:'inherit',backgroundColor:'#ffffff'}}>
+                                        <li>
+                                            <a href="/">
+                                                <i className="icon-user"><img src="img/sign/pwicon.png" ></img></i> Modify Password </a>
+                                        </li>
+                                        <li>
+                                            <a href="/">
+                                                <i className="icon-calendar"><img src="img/sign/money.png" style={{width:"20px", height:"20px"}}></img></i> Payment Information </a>
+                                        </li>
+                                        <li>
+                                            <a href="/">
+                                                <i className="icon-envelope-open"><img src="img/sign/mobile.png" style={{width:"20px", height:"20px"}}></img></i> Accound and Mobile </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                    </div>
                     </div>
                 </div>
-                <div className="content height100vh signupContent">
-                    <div className="background">
-                        <div className="col-md-4 col-md-offset-4">
-                            <form className="signup-form" onSubmit={handleSubmit(signUpUserHandler)}>
-                                <div className="form-title">
-                                    <h3 className="text-center text-white">Create your Account</h3></div>
-                                <Field component={renderField} type="email" placeholder="Email Address" name="email"/>
-                                <Field component = {renderField} type="password" placeholder="Password" name="password"/>
-                                <Field component = {renderField} type="password" placeholder="Confirm Password" name="confirmPassword"/>
-                                <div className="form-actions">
-                                    <button type="submit" className="btn btn-primary btn-block noborder">Sign Up</button>
+                <div className="clearfix">
+                </div>
+                <div className="page-container">
+                    <div style={{margin: 0,float:'none'}}>
+                        <div className="page-content">
+                            <div className="top-content">
+                                <div className="inner-bg">
+                                    <div className="container signContent">
+                                        <div className="row">
+                                            <div className="col-sm-6 col-sm-offset-3 form-box ">
+                                                <div className="form-top">
+                                                    <div className="form-top-left">
+                                                        <h3 id="signHeader">Create your account</h3>
+                                                        <p>Enter your Email adress and password to Signin:</p>
+                                                    </div>
+                                                    <div className="form-top-right">
+                                                        <i className="fa fa-key"></i>
+                                                    </div>
+                                                </div>
+                                                <div className="form-bottom">
+                                                    <form role="form" onSubmit={handleSubmit(signUpUserHandler)} method="post" className="login-form">
+                                                        <Field component={renderField} type="email" placeholder="Email Address" name="email" id="form-username"/>
+                                                        <Field component = {renderField} type="password" placeholder="Password" name="password"id="form-username"/>
+                                                        <Field component = {renderField} type="password" placeholder="Confirm Password" name="confirmPassword"id="form-password"/>
+                                                        <button type="submit" className="btn">Sign in!</button>
+                                                    </form>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div className="row">
+                                            <div className="col-sm-6 col-sm-offset-3 social-login">
+                                                <h3>...or login with:</h3>
+                                                <div className="social-login-buttons">
+                                                    <a className="btn btn-link-1 btn-link-1-facebook" href="#">
+                                                        <i className="fa fa-facebook"></i> Facebook
+                                                    </a>
+                                                    <a className="btn btn-link-1 btn-link-1-twitter" href="#">
+                                                        <i className="fa fa-twitter"></i> Twitter
+                                                    </a>
+                                                    <a className="btn btn-link-1 btn-link-1-google-plus" href="#">
+                                                        <i className="fa fa-google-plus"></i> Google Plus
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </form>
+
+                            </div>
                         </div>
                     </div>
                 </div>

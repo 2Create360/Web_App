@@ -3,41 +3,55 @@ import React from 'react';
 class AvailableTicket extends React.Component{
     render(){
         return(
-            <div id="home" className="tab-pane fade in active">
-                <h2 className="text-center text-white font3em">E-TICKET WALLET</h2>
-                <h3 className="text-white">You have 7 Valid E-Tickets in your wallet</h3>
-                <div className="row yellowBackground">
-                    <div className="col-md-5 col-xs-5">
-                        <strong className="font1_3">ROUTE 4</strong>
-                        <p><strong className="font1_3">Black  Diamond</strong></p>
+            <div className="tab-pane active" id="tab_1">
+                <h1>E-TICKET WALLET</h1>
+                <h3>You have 7 Valid E-Tickets in your wallet.</h3>
+                <div className="ticket">
+                    <div className="ticket-head">
+                        <div className="row">
+                            <div className="col-xs-6">Route <mark style={{backgroundColor: '#1f6ec5', color:'#ffffff'}}>4</mark></div>
+                            <div className="col-xs-6 text-right"><mark style={{backgroundColor: '#1f6ec5', color:'#ffffff'}}>5</mark> Valid Ticket</div>
+                        </div>
+                        <div className="row paddingtop1">
+                            <div className="col-xs-4 tbl-cell">
+                                Black Diamond
+                            </div>
+                            <div className="col-xs-4 tbl-cell text-center" style={{textAlign:'center'}}>
+                                <img src="img/icon1.png"/>
+                            </div>
+                            <div className="col-xs-4 tbl-cell text-right">
+                                Airdree
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-md-2 col-xs-2">
-                        <img src="img/narrowIcon.png" id="mainarrwo"/>
-                    </div>
-                    <div className="col-md-5 col-xs-5">
-                        <strong className="font1_3">5 VALID TICKETS</strong>
-                        <p><strong className="font1_3">Airdree</strong></p>
+                    <div className="ticket-qty">
+                        Set to auto renew when min qty is :2 <span className='qty_value'> Change</span>
                     </div>
                 </div>
-                <div className="row grayBackground">
-                    &nbsp;<strong className="font1_3 margin-left-10">Set to auto renew when min qty is : 2 </strong><a href="#">Change</a>
-                </div>
-                <div className="row whiteBackground">
-                    <div className="col-md-3 col-xs-3 text-center borderright">
-                        <a data-toggle="tab" href="#butyticket" aria-expanded="false">BUY MORE</a>
+
+                <div className="ticket">
+                    <div className="ticket-head">
+                        <div className="row">
+                            <div className="col-xs-6">Route <mark style={{backgroundColor: '#1f6ec5', color:'#ffffff'}}>4</mark></div>
+                            <div className="col-xs-6 text-right"><mark style={{backgroundColor:'#1f6ec5', color:'#ffffff'}} >5</mark> Valid Ticket</div>
+                        </div>
+                        <div className="row paddingtop1">
+                            <div className="col-xs-4 tbl-cell">
+                                Black Diamond
+                            </div>
+                            <div className="col-xs-4 tbl-cell text-center" style={{textAlign:'center'}}>
+                                <img src="img/icon1.png"/>
+                            </div>
+                            <div className="col-xs-4 tbl-cell text-right">
+                                Airdree
+                            </div>
+                        </div>
                     </div>
-                    <div className="col-md-3 col-xs-3 text-center borderright">
-                        <a href="#">TRANSFER</a>
-                    </div>
-                    <div className="col-md-3 col-xs-3 text-center borderright">
-                        <a href="#">VIEW MAP</a>
-                    </div>
-                    <div className="col-md-3 col-xs-3 text-center">
-                        <a href="#">SCHEDULE</a>
+                    <div className="ticket-qty">
+                        Set to auto renew when min qty is :2 <span className='qty_value'> Change</span>
                     </div>
                 </div>
             </div>
-
 
         )
     }
