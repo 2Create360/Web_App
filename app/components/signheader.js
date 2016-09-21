@@ -7,7 +7,7 @@ class SignHeader extends React.Component{
             <div className="page-header md-shadow-z-1-i navbar navbar-fixed-top">
                 <div className="page-header-inner">
                     <div className="page-logo">
-                        <Link to="/">
+                        <Link className="pull-left" to="/">
                             <img src="img/global/logo.png" style={{width: 97, height: 26}} alt="logo"
                                  className="logo-default"></img>
                         </Link>
