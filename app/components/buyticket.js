@@ -2,15 +2,6 @@ import React from 'react';
 import { Link } from 'react-router'
 
 class BuyTicket extends React.Component{
-    constructor(props) {
-        super(props);
-    }
-
-    handleChange(e) {
-        let nextState = {};
-        nextState[e.target.name] = e.target.value;
-        this.setState(nextState);
-    }
 
     render(){
         return(
