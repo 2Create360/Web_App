@@ -378,5 +378,6 @@ mark.backgrountActive{
     background-color:#1f6ec5
 }
 #buyTicket input{
-    line-height:1.42857143
+    height:inherit;
+    border-radius: 0;
 }
