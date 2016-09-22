@@ -16,7 +16,7 @@ class Home extends Component {
                                 <span className="icon-bar"></span>
                                 <span className="icon-bar"></span>
                             </button>
-                            <a className="logo" href="index.html"><img src="img/global/logo.png" alt="Logo"/></a>
+                            <Link className="logo" to="/"><img src="img/global/logo.png" alt="Logo"/></Link>
                         </div>
                         <div className="navbar-collapse collapse">
                             <ul className="nav navbar-nav navbar-right">

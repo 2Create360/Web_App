@@ -263,3 +263,6 @@ button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; bac
 .navbar-fixed-top.navbar{
     top:0px;
 }
+.signContent a, a:focus, a:hover, a:active{
+    color:#67bd3c;
+}

@@ -98,7 +98,6 @@ class SignUpForm extends Component {
                                                 <div className="form-top">
                                                     <div className="form-top-left">
                                                         <h3 id="signHeader">Create your account</h3>
-                                                        <p>Enter your Email address and password to Signup:</p>
                                                     </div>
                                                     <div className="form-top-right">
                                                         <i className="fa fa-key"></i>
@@ -109,7 +108,10 @@ class SignUpForm extends Component {
                                                         <Field component={renderField} type="email" placeholder="Email Address" name="email" id="form-username"/>
                                                         <Field component = {renderField} type="password" placeholder="Password" name="password"id="form-username"/>
                                                         <Field component = {renderField} type="password" placeholder="Confirm Password" name="confirmPassword"id="form-password"/>
-                                                        <button type="submit" className="btn">Sign in!</button>
+                                                        <button type="submit" className="btn">Sign In</button>
+                                                        <p>&nbsp;</p>
+                                                        <p className="text-center">Not a member? <Link to="/signin"> Sign up</Link></p>
+
                                                     </form>
                                                 </div>
                                             </div>

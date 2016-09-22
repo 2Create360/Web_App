@@ -373,3 +373,21 @@ a:hover {
 .font1_3{
     font-size:1.3em;
 }
+.page-header.navbar .top-menu {
+    float: right;
+    margin:0;
+    padding:0;
+}
+@media (max-width: 991px){
+    .page-header.navbar .top-menu .navbar-nav {
+        display: inline-block;
+        margin: 0px 10px 0px 0px;
+    }
+    .page-header.navbar .top-menu .navbar-nav > li {
+        float: left;
+    }
+}
+.page-header.navbar .page-logo > a {
+    display: inline-block;
+    float: left;
+}

@@ -94,7 +94,6 @@ class SignInForm extends Component {
                                                 <div className="form-top">
                                                     <div className="form-top-left">
                                                         <h3 id="signHeader">Login your account</h3>
-                                                        <p>Enter your Email address and password to Signup:</p>
                                                     </div>
                                                     <div className="form-top-right">
                                                         <i className="fa fa-key"></i>
@@ -105,7 +104,9 @@ class SignInForm extends Component {
                                                         <Field component={renderField} type="email" placeholder="Email Address" name="email"/>
                                                         <Field component = {renderField} type="password" placeholder="Password" name="password"/>
                                                             {error && <strong>{error}</strong>}
-                                                        <button type="submit" className="btn">Sign in!</button>
+                                                        <button type="submit" className="btn">Sign Up</button>
+                                                        <p>&nbsp;</p>
+                                                        <p className="text-center">Have an account?<Link to="/signup">Sing in</Link></p>
                                                     </form>
                                                 </div>
                                             </div>
