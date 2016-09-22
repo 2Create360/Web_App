@@ -47,7 +47,7 @@ class BuyTicket extends React.Component{
                             <div className="col-md-4 text-center">
                             </div>
                             <div className="col-md-8 margin-top-10 text-right payBtn">
-                                <Link to="/ticket" className="w3-btn w3-margin-bottom text-white">Pay Now</Link>
+                                <Link to="/payment" className="w3-btn w3-margin-bottom text-white">Pay Now</Link>
                             </div>
                         </div>
                     </div>
