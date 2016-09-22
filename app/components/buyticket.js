@@ -16,11 +16,11 @@ class BuyTicket extends React.Component{
                     <div className="tickets_mdbg">
                         <div className="row">
                             <div className="col-xs-4 text-center">
-                                <img src="img/ticket/bus.png" className="margin-top-15 width100" style={{maxWidth:'186px'}}/>
+                                <img src="img/ticket/bus.png" className="margin-top-15 width100" id="availableBus"/>
                             </div>
                             <div className="col-xs-8">
                                 <div className="custom-dropdown small text-center show" >
-                                    <select className="glyphicon glyphicon-triangle-bottom text-center" id="buyTicketSelect">
+                                    <select className="glyphicon glyphicon-triangle-bottom text-center width100" id="buyTicketSelect">
                                         <option>Filter by Route</option>
                                         <option>The Great Gatsby</option>
                                         <option>V for Vendetta</option>
@@ -34,17 +34,17 @@ class BuyTicket extends React.Component{
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-md-4 text-center">
+                            <div className="col-md-4 col-sm-4 text-center">
                                 <p className="text-center" id="buyQuantityLabel"><strong>Qty of Tickets</strong></p>
                                 <input className="form-control marginAuto width60" type="number" value="33"  onChange={this.handleChange}/>
                             </div>
-                            <div className="col-md-8 margin-top-25" style={{fontSize:'2em', color:'#61a31b'}}>
+                            <div className="col-md-8 margin-top-25" id="totalCost">
                                 <span className="pull-left"><strong>Total Cost : </strong></span>
                                 <span className="pull-right"><strong>$55</strong></span>
                             </div>
                         </div>
                         <div className="row">
-                            <div className="col-md-4 text-center">
+                            <div className="col-md-4 col-sm-8 text-center">
                             </div>
                             <div className="col-md-8 margin-top-10 text-right payBtn">
                                 <Link to="/payment" className="w3-btn w3-margin-bottom text-white">Pay Now</Link>

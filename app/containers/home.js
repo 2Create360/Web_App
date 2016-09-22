@@ -9,7 +9,7 @@ class Home extends Component {
         return (
             <div>
                 <div className="navbar navbar-inverse navbar-fixed-top open">
-                    <div className="container" style={{width:'100%'}}>
+                    <div className="container width100">
                         <div className="navbar-header">
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                 <span className="icon-bar"></span>
@@ -21,7 +21,7 @@ class Home extends Component {
                         <div className="navbar-collapse collapse">
                             <ul className="nav navbar-nav navbar-right">
                                 <li><a href="#pricing" className="scroll">Home</a></li>
-                                <li><a href="#footer" >About</a></li>
+                                <li><a href="#main-info" >About</a></li>
                                 <li><a href="#pricing" className="scroll">Contact</a></li>
                                 <li><Link to="/ticket">Ticket</Link></li>
                                 <li><Link to="/signin">Sign in</Link></li>
@@ -90,7 +90,6 @@ class Home extends Component {
                         </div>
                     </div>
                 </footer>
-                <div id="footer"></div>
             </div>
         )
     }

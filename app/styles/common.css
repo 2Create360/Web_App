@@ -391,3 +391,16 @@ a:hover {
     display: inline-block;
     float: left;
 }
+
+.page-logo img{
+    width:97px;
+    height:26px;
+}
+#welcome{
+    line-height:46px;
+}
+#subTopMenu{
+    float:none;
+    right:0;
+    left: inherit;
+}

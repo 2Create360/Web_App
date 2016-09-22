@@ -22,14 +22,20 @@
     height: 46px;
     display: inline-block;
 }
-
-.page-header.navbar .page-logo {
-    float: left;
-    display: block;
-    width: 235px;
-    height: 46px;
-    padding-left: 20px;
-    padding-right: 20px;
+@media (max-width: 767px){
+    .page-header.navbar .page-logo {
+        width: auto;
+    }
+}
+@media (min-width: 767px) {
+    .page-header.navbar .page-logo {
+        float: left;
+        display: block;
+        width: 235px;
+        height: 46px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 .page-header.navbar .top-menu .navbar-nav > li.dropdown-user .dropdown-toggle {
     padding: 14px 6px 12px 8px;
