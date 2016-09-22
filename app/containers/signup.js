@@ -89,7 +89,7 @@ class SignUpForm extends Component {
                 <div className="clearfix">
                 </div>
                 <div className="page-container">
-                    <div style={{margin: 0,float:'none'}}>
+                    <div className="no-margin no-float">
                         <div className="page-content">
                             <div className="top-content">
                                 <div className="inner-bg">

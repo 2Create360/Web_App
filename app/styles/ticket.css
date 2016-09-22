@@ -392,3 +392,21 @@ mark.backgrountActive{
     fontSize:2em;
     color:#61a31b;
 }
+#ticketTab{
+    border-bottom:1px solid #fff;
+}
+#usedHistoryLable{
+    display:table;
+}
+@media (max-width:768px) {
+    #usedTableWrapper {
+        overflow-x: auto;
+    }
+}
+@media (min-width:769px){
+    #usedTableWrapper {
+        overflow-x: visible;
+    }
+
+}
+

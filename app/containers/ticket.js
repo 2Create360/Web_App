@@ -14,12 +14,12 @@ class Ticket extends Component {
             <div className="mainBackground ticketPage">
                 <Header/>
                 <div className="page-container margin-top-46">
-                    <div className="page-content-wrapper col-md-7 col-xs-12" style={{margin:'0 auto',float:'none'}}>
+                    <div className="page-content-wrapper col-md-7 col-xs-12 no-margin no-float margin-auto">
                         <div className="page-content">
                             <div className="row">
                                 <div className="col-md-12">
                                     <div className="tabbable-line boxless">
-                                        <ul className="nav nav-tabs" style={{borderBottom:1+'px solid#fff'}}>
+                                        <ul className="nav nav-tabs" id="ticketTab">
                                             <li className="active">
                                                 <a href="#availableTicket" data-toggle="tab">
                                                     Avaiable Tickets</a>

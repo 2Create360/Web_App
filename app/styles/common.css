@@ -126,6 +126,10 @@ a:hover {
 .no-margin {
     margin: 0 !important;
 }
+.no-float{
+    float:none !important;
+}
+
 .no-bottom-padding {
     padding-bottom: 0 !important;
 }
@@ -264,7 +268,9 @@ a:hover {
 .margin-left-20 {
     margin-left: 20px !important;
 }
-
+.margin-auto{
+    margin:auto !important;
+}
 .padding-left-0 {
     padding-left: 0 !important;
 }
@@ -340,7 +346,7 @@ a:hover {
     background-color:rgb(230,216,241);
 }
 .whiteBackground{
-    background-color:white;
+    background-color:white !important;
 }
 .color-gray {
     background: #798b97;

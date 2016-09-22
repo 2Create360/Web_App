@@ -1415,7 +1415,7 @@ class Pay extends Component{
                                     return QJ.addClass(this.$card, 'jp-card-flipped');
                                 },
                                 unflipCard: function() {
-                                    //return QJ.removeClass(this.$card, 'jp-card-flipped');
+                                    return QJ.removeClass(this.$card, 'jp-card-flipped');
                                 }
                             };
 
@@ -2116,7 +2116,7 @@ class Pay extends Component{
         return(
             <div className="container">
                 <div className="row">
-                    <div className="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4" style={{marginTop:'70px',minWidth:'370px'}}>
+                    <div className="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4" id="payFormContainer">
                         <div className="panel panel-default credit-card-box">
                             <div className="panel-heading display-table width100" >
                                 <div className="row display-tr" >

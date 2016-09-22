@@ -20,7 +20,7 @@ class Header extends React.Component{
                                 <a href="" className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                                     <img src="img/sign/icon-color.png" />
                                 </a>
-                                <ul className="dropdown-menu dropdown-menu-default" style={{float:'none',right:0,left: 'inherit',backgroundColor:'#ffffff'}}>
+                                <ul className="dropdown-menu dropdown-menu-default whiteBackground" id="subTopMenu" >
                                     <li>
                                         <a href="extra_profile.html">
                                             <i className="icon-user"><img src="img/sign/pwicon.png" /></i> Profile </a>

@@ -4,19 +4,24 @@ class UsedTicket extends React.Component{
         return(
             <div className="tab-pane" id="usedTicket">
                 <h1>E-TICKET WALLET</h1>
-                <div>
-                    <h3 className="text-black" className="pull-left" style={{display:'table'}}>History past 4 monthd</h3>
-                    <span className="custom-dropdown small pull-right">
-										<select>
-											<option>Filter by Route</option>
-											<option>The Great Gatsby</option>
-											<option>V for Vendetta</option>
-											<option>The Wolf of Wallstreet</option>
-											<option>Quantum of Solace</option>
-										</select>
-									</span>
+                <div className="row">
+                    <div className="col-md-4">
+                        <h3 className="text-black pull-left" id="usedHistoryLable">History past 4 monthd</h3>
+                    </div>
+                    <div className="col-md-4"></div>
+                    <div className="col-md-4">
+                        <span className="custom-dropdown small pull-right">
+                            <select>
+                                <option>Filter by Route</option>
+                                <option>The Great Gatsby</option>
+                                <option>V for Vendetta</option>
+                                <option>The Wolf of Wallstreet</option>
+                                <option>Quantum of Solace</option>
+                            </select>
+                        </span>
+                    </div>
                 </div>
-                <div>
+                <div id="usedTableWrapper">
                     <table className="customers">
                         <tbody>
                             <tr>
