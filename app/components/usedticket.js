@@ -2,7 +2,7 @@ import React from 'react';
 class UsedTicket extends React.Component{
     render(){
         return(
-            <div className="tab-pane" id="tab_3">
+            <div className="tab-pane" id="usedTicket">
                 <h1>E-TICKET WALLET</h1>
                 <div>
                     <h3 className="text-black" className="pull-left" style={{display:'table'}}>History past 4 monthd</h3>

@@ -3,9 +3,13 @@ import { Link } from 'react-router'
 
 class BuyTicket extends React.Component{
 
+    handleChange(event) {
+        this.setState({value: event.target.value.substr(0, 140)});
+    }
+
     render(){
         return(
-            <div className="tab-pane" id="tab_2">
+            <div className="tab-pane" id="buyTicket">
                 <h1 className="text-black">E-TICKET WALLET</h1><br/>
                 <div className="col-md-12">
                     <div className="tickets_topbg"></div>
@@ -32,7 +36,7 @@ class BuyTicket extends React.Component{
                         <div className="row">
                             <div className="col-md-4 text-center">
                                 <p className="text-center" id="buyQuantityLabel"><strong>Qty of Tickets</strong></p>
-                                <input className="form-control marginAuto width60" type="number" value="33"/>
+                                <input className="form-control marginAuto width60" type="number" value="33"  onChange={this.handleChange}/>
                             </div>
                             <div className="col-md-8 margin-top-25" style={{fontSize:'2em', color:'#61a31b'}}>
                                 <span className="pull-left"><strong>Total Cost : </strong></span>
@@ -43,7 +47,7 @@ class BuyTicket extends React.Component{
                             <div className="col-md-4 text-center">
                             </div>
                             <div className="col-md-8 margin-top-10 text-right payBtn">
-                                <Link to="/" className="w3-btn w3-margin-bottom text-white">Pay Now</Link>
+                                <Link to="/payment" className="w3-btn w3-margin-bottom text-white">Pay Now</Link>
                             </div>
                         </div>
                     </div>

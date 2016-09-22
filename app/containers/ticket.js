@@ -21,15 +21,15 @@ class Ticket extends Component {
                                     <div className="tabbable-line boxless">
                                         <ul className="nav nav-tabs" style={{borderBottom:1+'px solid#fff'}}>
                                             <li className="active">
-                                                <a href="#tab_1" data-toggle="tab">
+                                                <a href="#availableTicket" data-toggle="tab">
                                                     Avaiable Tickets</a>
                                             </li>
                                             <li>
-                                                <a href="#tab_2" data-toggle="tab">
+                                                <a href="#buyTicket" data-toggle="tab">
                                                     Buy Tickets</a>
                                             </li>
                                             <li>
-                                                <a href="#tab_3" data-toggle="tab">
+                                                <a href="#usedTicket" data-toggle="tab">
                                                     Used Tickets</a>
                                             </li>
                                         </ul>

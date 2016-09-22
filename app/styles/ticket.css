@@ -237,6 +237,7 @@
 @media only screen and (min-width:992px) {
     #buyTicketHeader{
         font-size:5.5vw;
+        line-height:110px;
     }
 }
 #buyTicketSelect{
@@ -375,4 +376,7 @@
 }
 mark.backgrountActive{
     background-color:#1f6ec5
+}
+#buyTicket input{
+    line-height:1.42857143
 }

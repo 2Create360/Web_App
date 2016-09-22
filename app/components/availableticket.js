@@ -39,7 +39,7 @@ Ticket.defaultProps = {
 class AvailableTicket extends React.Component{
     render(){
         return(
-            <div className="tab-pane active" id="tab_1">
+            <div className="tab-pane active" id="availableTicket">
                 <h1 className="text-black">E-TICKET WALLET</h1>
                 <h3 className="text-black">You have 7 Valid E-Tickets in your wallet.</h3>
                 <Ticket routeNumber="4" from="Black Diamond" ticketCount="5" to="Aridree" minCount="2" />
