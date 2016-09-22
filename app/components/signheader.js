@@ -40,7 +40,7 @@ class SignHeader extends React.Component{
                                         <Link to="/">
                                             <i className="icon-envelope-open"><img src="img/sign/mobile.png"
                                                                                    style={{width:"20px", height:"20px"}}></img></i>
-                                            Accound and Mobile </Link>
+                                            Account and Mobile </Link>
                                     </li>
                                 </ul>
                             </li>

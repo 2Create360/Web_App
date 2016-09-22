@@ -1,52 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import jQuery from 'jquery';
-var ReactCSSTransitionGroup = require('react-addons-css-transition-group');
 
-class Pay extends React.Component{
-    render(){
-        return(
-            <div className="container">
-                <div className="row">
-                    <div className="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4" style={{marginTop:'70px'}}>
-                        <div className="panel panel-default credit-card-box">
-                            <div className="panel-heading display-table width100" >
-                                <div className="row display-tr" >
-                                    <h3 className="panel-title display-td" >Payment Details</h3>
-                                    <div className="display-td" >
-                                        <img className="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png"/>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="panel-body">
-                                <div className="card-container">
-                                    <div className="card-wrapper"></div>
-                                    <div className="form-container">
-                                        <form action="">
-                                            <label >Card Number</label>
-                                            <input placeholder="XXXX  XXXX  XXXX  XXXX" type="text" name="number"/>
-                                            <label>Name on Card</label>
-                                            <input placeholder="Full Name" type="text" name="name"/><br/>
-                                            <div className="cardForm-Field50">
-                                                <label>Expiry Date</label><br/>
-                                                <input placeholder="MM/YY" type="text" name="expiry" className="secondRow"/>
-                                            </div>
-                                            <div className="cardForm-Field50">
-                                                <label >Security Code</label><br/>
-                                                <input placeholder="XXX" type="text" name="cvc" className="secondRow incorrectInfo"/>
-                                            </div>
-                                            <label>Postal Code / ZIP</label>
-                                            <input placeholder="XXX XXX" type="text" name="name"/><br/>
-                                            <input type="submit" value="Pay $500.00" className="button CardGood"/>
-                                        </form>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        )
-    }
+class Pay extends Component{
+
     componentDidMount(){
         ! function(e) {
             if ("object" == typeof exports) module.exports = e();
@@ -2155,5 +2111,51 @@ class Pay extends React.Component{
             container: '.card-wrapper'
         });
     }
+
+    render(){
+        return(
+            <div className="container">
+                <div className="row">
+                    <div className="col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1 col-md-4 col-md-offset-4" style={{marginTop:'70px',minWidth:'370px'}}>
+                        <div className="panel panel-default credit-card-box">
+                            <div className="panel-heading display-table width100" >
+                                <div className="row display-tr" >
+                                    <h3 className="panel-title display-td" >Payment Details</h3>
+                                    <div className="display-td" >
+                                        <img className="img-responsive pull-right" src="http://i76.imgup.net/accepted_c22e0.png"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="panel-body">
+                                <div className="card-container">
+                                    <div className="card-wrapper"></div>
+                                    <div className="form-container">
+                                        <form action="">
+                                            <label >Card Number</label>
+                                            <input placeholder="XXXX  XXXX  XXXX  XXXX" type="text" name="number"/>
+                                            <label>Name on Card</label>
+                                            <input placeholder="Full Name" type="text" name="name"/><br/>
+                                            <div className="cardForm-Field50">
+                                                <label>Expiry Date</label><br/>
+                                                <input placeholder="MM/YY" type="text" name="expiry" className="secondRow"/>
+                                            </div>
+                                            <div className="cardForm-Field50">
+                                                <label >Security Code</label><br/>
+                                                <input placeholder="XXX" type="text" name="cvc" className="secondRow incorrectInfo"/>
+                                            </div>
+                                            <label>Postal Code / ZIP</label>
+                                            <input placeholder="XXX XXX" type="text" name="name"/><br/>
+                                            <input type="submit" value="Pay $500.00" className="button CardGood"/>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        )
+    }
+
 }
 export default Pay;
