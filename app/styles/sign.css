@@ -86,6 +86,7 @@
 .inner-bg {
     padding: 100px 0 170px 0;
     height:100%;
+    min-height:800px;
 }
 .form-box {
     margin-top: 35px;
