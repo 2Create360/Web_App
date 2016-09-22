@@ -3,7 +3,7 @@ import { Field, SubmissionError, reduxForm } from 'redux-form'
 import {connect} from 'react-redux';
 import {signInUser, signInUserSuccess, signInUserFailure} from '../actions/users';
 import { Link } from 'react-router'
-import SignHeader from '../components/signheader';
+import Header from '../components/header'
 import SocialLogin from '../components/sociallogin';
 
 
@@ -80,7 +80,7 @@ class SignInForm extends Component {
 
         return (
             <div className="mainBackground">
-                <SignHeader/>
+                <Header/>
                 <div className="clearfix">
                 </div>
                 <div className="page-container">

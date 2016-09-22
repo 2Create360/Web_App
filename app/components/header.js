@@ -8,14 +8,14 @@ class Header extends React.Component{
                 <div className="page-header-inner">
                     <div className="page-logo">
                         <Link to="/">
-                            <img src="img/global/logo.png" alt="logo" style={{width:97,height:26}} className="logo-default"/>
+                            <img src="img/global/logo.png" alt="logo" className="logo-default"/>
                         </Link>
                         <div className="menu-toggler sidebar-toggler hide">
                         </div>
                     </div>
                     <div className="top-menu">
                         <ul className="nav navbar-nav pull-right">
-                            <li className="dropdown dropdown-extended dropdown-tasks"><span style={{lineHeight: 46+'px', color:'white'}}>Welcome</span></li>
+                            <li className="dropdown dropdown-extended dropdown-tasks"><span id="welcome" className="text-white">Welcome</span></li>
                             <li className="dropdown dropdown-user">
                                 <a href="" className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
                                     <img src="img/sign/icon-color.png" />
@@ -23,15 +23,7 @@ class Header extends React.Component{
                                 <ul className="dropdown-menu dropdown-menu-default" style={{float:'none',right:0,left: 'inherit',backgroundColor:'#ffffff'}}>
                                     <li>
                                         <a href="extra_profile.html">
-                                            <i className="icon-user"><img src="img/sign/pwicon.png" /></i> Modify Password </a>
-                                    </li>
-                                    <li>
-                                        <a href="page_calendar.html">
-                                            <i className="icon-calendar"><img src="img/sign/money.png" style={{width:20, height:20}}/></i> Payment Information </a>
-                                    </li>
-                                    <li>
-                                        <a href="inbox.html">
-                                            <i className="icon-envelope-open"><img src="img/sign/mobile.png" style={{width:20, height:20}}/></i> Accound and Mobile </a>
+                                            <i className="icon-user"><img src="img/sign/pwicon.png" /></i> Profile </a>
                                     </li>
                                 </ul>
                             </li>

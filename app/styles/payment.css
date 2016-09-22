@@ -34,10 +34,6 @@
     vertical-align: middle;
     width: 50%;
 }
-/* Just looks nicer */
-.credit-card-box .panel-heading img {
-    min-width: 180px;
-}
 
 
 .cardForm-Field50 {
@@ -145,4 +141,8 @@ input:not([type=submit]):not([type=file]) {
 }
 .form-container input.incorrectInfo {
     border: red solid 1px;
+}
+.jp-card .jp-card-front{
+    z-index:10;
+    position:relative;
 }

@@ -5,7 +5,8 @@ import {signUpUser, signUpUserSuccess, signUpUserFailure, resetUser,
     validateUserFields,validateUserFieldsSuccess,validateUserFieldsFailure,
     resetValidateUserFields } from '../actions/users';
 import { Link } from 'react-router'
-import SignHeader from '../components/signheader';
+import Header from '../components/header'
+
 import SocialLogin from '../components/sociallogin';
 
 //Client side validation
@@ -84,7 +85,7 @@ class SignUpForm extends Component {
 
         return (
             <div className="mainBackground">
-                <SignHeader/>
+                <Header/>
                 <div className="clearfix">
                 </div>
                 <div className="page-container">
