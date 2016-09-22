@@ -259,3 +259,6 @@ button.btn:active:focus, button.btn.active:focus { outline: 0; opacity: 0.6; bac
     font-size: 20px;
     line-height: 20px;
 }
+.navbar-fixed-top.navbar{
+    top:0px;
+}

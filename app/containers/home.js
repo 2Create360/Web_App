@@ -23,7 +23,8 @@ class Home extends Component {
                                 <li><a href="#pricing" className="scroll">Home</a></li>
                                 <li><a href="#footer" >About</a></li>
                                 <li><a href="#pricing" className="scroll">Contact</a></li>
-                                <li><a href="#">Sign in</a></li>
+                                <li><Link to="/signin">Sign in</Link></li>
+                                <li><Link to="/signup">Sign Up</Link></li>
                             </ul>
                         </div>
                     </div>
