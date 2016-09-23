@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import jQuery from 'jquery';
+import { Link } from 'react-router'
 
 class Pay extends Component{
 
@@ -2130,7 +2131,7 @@ class Pay extends Component{
                                 <div className="card-container">
                                     <div className="card-wrapper"></div>
                                     <div className="form-container">
-                                        <form action="">
+                                        <form action="/paymentconfirm">
                                             <label >Card Number</label>
                                             <input placeholder="XXXX  XXXX  XXXX  XXXX" type="text" name="number"/>
                                             <label>Name on Card</label>
@@ -2145,7 +2146,7 @@ class Pay extends Component{
                                             </div>
                                             <label>Postal Code / ZIP</label>
                                             <input placeholder="XXX XXX" type="text" name="name"/><br/>
-                                            <input type="submit" value="Pay $500.00" className="button CardGood"/>
+                                            <Link to="paymentconfirm" value="Pay $500.00" className="button btn CardGood width100">Pay $500.00</Link>
                                         </form>
                                     </div>
                                 </div>
@@ -2156,6 +2157,5 @@ class Pay extends Component{
             </div>
         )
     }
-
 }
 export default Pay;

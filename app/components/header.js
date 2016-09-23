@@ -22,8 +22,8 @@ class Header extends React.Component{
                                 </a>
                                 <ul className="dropdown-menu dropdown-menu-default whiteBackground" id="subTopMenu" >
                                     <li>
-                                        <a href="extra_profile.html">
-                                            <i className="icon-user"><img src="img/sign/pwicon.png" /></i> Profile </a>
+                                        <Link to="/profile">
+                                            <i className="icon-user"><img src="img/sign/pwicon.png" /></i> Profile </Link>
                                     </li>
                                 </ul>
                             </li>
