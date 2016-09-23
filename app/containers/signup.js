@@ -95,7 +95,7 @@ class SignUpForm extends Component {
                                 <div className="inner-bg">
                                     <div className="container signContent">
                                         <div className="row">
-                                            <div className="col-sm-6 col-sm-offset-3 form-box ">
+                                            <div className="col-sm-4 col-sm-offset-4 form-box ">
                                                 <div className="form-top">
                                                     <div className="form-top-left">
                                                         <h3 id="signHeader">Create your account</h3>

@@ -90,7 +90,7 @@ class SignInForm extends Component {
                                 <div className="inner-bg">
                                     <div className="container signContent">
                                         <div className="row">
-                                            <div className="col-sm-6 col-sm-offset-3 form-box ">
+                                            <div className="col-sm-4 col-sm-offset-4 form-box ">
                                                 <div className="form-top">
                                                     <div className="form-top-left">
                                                         <h3 id="signHeader">Login your account</h3>
@@ -104,7 +104,7 @@ class SignInForm extends Component {
                                                         <Field component={renderField} type="email" placeholder="Email Address" name="email"/>
                                                         <Field component = {renderField} type="password" placeholder="Password" name="password"/>
                                                             {error && <strong>{error}</strong>}
-                                                        <button type="submit" className="btn">Sign Inp</button>
+                                                        <button type="submit" className="btn">Sign In</button>
                                                         <p>&nbsp;</p>
                                                         <p className="text-center">Have an account?<Link to="/signup">Sign Up</Link></p>
                                                     </form>
