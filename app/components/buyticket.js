@@ -20,7 +20,7 @@ class BuyTicket extends React.Component{
                             </div>
                             <div className="col-xs-8">
                                 <div className="custom-dropdown small text-center show" >
-                                    <select className="glyphicon glyphicon-triangle-bottom text-center width100" id="buyTicketSelect">
+                                    <select className="text-center width100" id="buyTicketSelect">
                                         <option>Filter by Route</option>
                                         <option>The Great Gatsby</option>
                                         <option>V for Vendetta</option>

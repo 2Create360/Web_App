@@ -413,3 +413,8 @@ a:hover {
     right:0;
     left: inherit;
 }
+@media (max-width: 767px) {
+    .text-center-xs {
+        text-align: center;
+    }
+}

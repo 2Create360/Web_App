@@ -220,7 +220,7 @@
 }
 
 .custom-dropdown::before {
-    background-color: rgba(0,0,0,.15);
+    /*background-color: rgba(0,0,0,.15);*/
 }
 
 .custom-dropdown::after {
@@ -247,6 +247,9 @@
     font-family:arial;
     background-color:#61a31b;
     color:#dde3c9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+
 }
 @media only screen and (min-width:992px){
     #buyTicketSelect{
@@ -409,4 +412,6 @@ mark.backgrountActive{
     }
 
 }
-
+#usedTicket h1{
+    color:black;
+}
