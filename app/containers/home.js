@@ -10,7 +10,7 @@ class Home extends Component {
             <div>
                 <div className="navbar navbar-inverse navbar-fixed-top open">
                     <div className="container width100">
-                        <div className="navbar-header">
+                        <div className="navbar-header margin-left-0">
                             <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
                                 <span className="icon-bar"></span>
                                 <span className="icon-bar"></span>

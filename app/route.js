@@ -7,6 +7,7 @@ import SignIn from './containers/signin'
 import Ticket from './containers/ticket'
 import Payment from './containers/payment'
 import PaymentConfirm from './containers/paymentconfirm'
+import Profile from './containers/profile'
 
 export default (
     <Route component={App}>
@@ -16,5 +17,6 @@ export default (
         <Route path="/ticket" component={Ticket}></Route>
         <Route path="/payment" component={Payment}></Route>
         <Route path="/paymentconfirm" component={PaymentConfirm}></Route>
+        <Route path="/profile" component={Profile}></Route>
     </Route>
 )

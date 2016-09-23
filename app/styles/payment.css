@@ -146,6 +146,3 @@ input:not([type=submit]):not([type=file]) {
     z-index:10;
     position:relative;
 }
-#payFormContainer{
-    margin-top:70px;
-}

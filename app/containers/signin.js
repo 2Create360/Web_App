@@ -104,9 +104,9 @@ class SignInForm extends Component {
                                                         <Field component={renderField} type="email" placeholder="Email Address" name="email"/>
                                                         <Field component = {renderField} type="password" placeholder="Password" name="password"/>
                                                             {error && <strong>{error}</strong>}
-                                                        <button type="submit" className="btn">Sign Up</button>
+                                                        <button type="submit" className="btn">Sign Inp</button>
                                                         <p>&nbsp;</p>
-                                                        <p className="text-center">Have an account?<Link to="/signup">Sing in</Link></p>
+                                                        <p className="text-center">Have an account?<Link to="/signup">Sign Up</Link></p>
                                                     </form>
                                                 </div>
                                             </div>
