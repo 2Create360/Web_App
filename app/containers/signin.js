@@ -106,7 +106,7 @@ class SignInForm extends Component {
                                                             {error && <strong>{error}</strong>}
                                                         <button type="submit" className="btn">Sign In</button>
                                                         <p>&nbsp;</p>
-                                                        <p className="text-center">Have an account?<Link to="/signup">Sign Up</Link></p>
+                                                        <p className="text-center">Not a member? <Link to="/signup">Sign Up</Link></p>
                                                     </form>
                                                 </div>
                                             </div>
