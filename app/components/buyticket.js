@@ -38,7 +38,7 @@ class BuyTicket extends React.Component{
                                 <p className="text-center" id="buyQuantityLabel"><strong>Qty of Tickets</strong></p>
                                 <input className="form-control marginAuto width60" type="number" value="33"  onChange={this.handleChange}/>
                             </div>
-                            <div className="col-md-8 margin-top-25" id="totalCost">
+                            <div className="col-md-8 margin-top-25 font2" id="totalCost">
                                 <span className="pull-left"><strong>Total Cost : </strong></span>
                                 <span className="pull-right"><strong>$55</strong></span>
                             </div>

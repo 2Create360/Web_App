@@ -382,6 +382,9 @@ a:hover {
 .font1_3{
     font-size:1.3em;
 }
+.font2{
+    font-size:2em !important;
+}
 .page-header.navbar .top-menu {
     float: right;
     margin:0;
