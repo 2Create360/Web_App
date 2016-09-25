@@ -9,7 +9,21 @@ import UsedTicket from '../components/usedticket'
 
 class Ticket extends Component {
 
+    static contextTypes = {
+        router: PropTypes.object
+    };
 
+    componentWillMount() {
+        if (this.props.user.status !== 'authenticated') {
+            this.context.router.push('/signin');
+        }
+    }
+
+    componentWillReceiveProps(nextProps) {
+        if(nextProps.user.status !== 'authenticated') {
+            this.context.router.push('/');
+        }
+    }
 
     render() {
         return (
@@ -60,7 +74,7 @@ const mapDispatchToProps = (dispatch) => {
 
 function mapStateToProps(state, ownProps) {
     return {
-
+        user: state.user
     };
 }
 
