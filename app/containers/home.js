@@ -34,9 +34,9 @@ class Home extends Component {
                         </div>
                         <div className="navbar-collapse collapse">
                             <ul className="nav navbar-nav navbar-right">
-                                <li><a href="#pricing" className="scroll">Home</a></li>
+                                <li><a href="#" className="scroll">Home</a></li>
                                 <li><a href="#main-info" >About</a></li>
-                                <li><a href="#pricing" className="scroll">Contact</a></li>
+                                <li><a href="#" className="scroll">Contact</a></li>
                                 <li><Link to="/ticket">Ticket</Link></li>
                                 <li><Link to="/signin">Sign in</Link></li>
                                 <li><Link to="/signup">Sign Up</Link></li>

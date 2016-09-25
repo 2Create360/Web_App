@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import { Link } from 'react-router'
 import AvailableTicket from '../components/availableticket'
 import BuyTicket from '../components/buyticket'
-import Header from '../components/header'
+import Header from '../components/navbar'
 import UsedTicket from '../components/usedticket'
 
 

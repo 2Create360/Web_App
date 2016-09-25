@@ -3,7 +3,7 @@ import { Field, SubmissionError, reduxForm } from 'redux-form'
 import {connect} from 'react-redux';
 import {signInUser, signInUserSuccess, signInUserFailure} from '../actions/users';
 import { Link } from 'react-router'
-import Header from '../components/header'
+import Header from '../components/navbar'
 import SocialLogin from '../components/sociallogin';
 
 

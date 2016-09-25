@@ -5,7 +5,7 @@ import {signUpUser, signUpUserSuccess, signUpUserFailure, resetUser,
     validateUserFields,validateUserFieldsSuccess,validateUserFieldsFailure,
     resetValidateUserFields } from '../actions/users';
 import { Link } from 'react-router'
-import Header from '../components/header'
+import Header from '../components/navbar'
 
 import SocialLogin from '../components/sociallogin';
 
