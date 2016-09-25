@@ -9,6 +9,8 @@ import UsedTicket from '../components/usedticket'
 
 class Ticket extends Component {
 
+
+
     render() {
         return (
             <div className="mainBackground ticketPage">

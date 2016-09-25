@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class Ticket extends React.Component{
+class Ticket extends Component{
     render(){
         return(
             <div className="ticket">
@@ -36,7 +36,7 @@ Ticket.defaultProps = {
     minCount:'2'
 };
 
-class AvailableTicket extends React.Component{
+class AvailableTicket extends Component{
     render(){
         return(
             <div className="tab-pane active" id="availableTicket">
