@@ -5,7 +5,7 @@ import {signUpUser, signUpUserSuccess, signUpUserFailure, resetUser,
     validateUserFields,validateUserFieldsSuccess,validateUserFieldsFailure,
     resetValidateUserFields } from '../actions/users';
 import { Link } from 'react-router'
-import Header from '../components/navbar'
+import Navbar from '../components/navbar'
 
 import SocialLogin from '../components/sociallogin';
 
@@ -85,7 +85,7 @@ class SignUpForm extends Component {
 
         return (
             <div className="mainBackground">
-                <Header/>
+                <Navbar/>
                 <div className="clearfix">
                 </div>
                 <div className="page-container">

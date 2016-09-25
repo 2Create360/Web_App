@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import { Link } from 'react-router'
 import AvailableTicket from '../components/availableticket'
 import BuyTicket from '../components/buyticket'
-import Header from '../components/navbar'
+import Navbar from '../components/navbar'
 import UsedTicket from '../components/usedticket'
 
 
@@ -14,7 +14,7 @@ class Ticket extends Component {
     render() {
         return (
             <div className="mainBackground ticketPage">
-                <Header/>
+                <Navbar/>
                 <div className="page-container margin-top-46">
                     <div className="page-content-wrapper col-md-7 col-xs-12 no-margin no-float margin-auto">
                         <div className="page-content">

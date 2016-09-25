@@ -1,14 +1,14 @@
 import { connect } from 'react-redux';
 import React, {Component, PropTypes} from 'react'
 import { Link } from 'react-router'
-import Header from '../components/navbar'
+import Navbar from '../components/navbar'
 
 class PaymentConfirm extends Component {
 
     render() {
         return (
             <div className="mainBackground">
-                <Header/>
+                <Navbar/>
                 <div className="clearfix">
                 </div>
 

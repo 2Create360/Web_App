@@ -1,13 +1,13 @@
 import React, {Component, PropTypes} from 'react'
 import {connect} from 'react-redux'
 import { Link } from 'react-router'
-import Header from '../components/navbar'
+import Navbar from '../components/navbar'
 
 class Profile extends React.Component{
     render(){
         return(
         <div className="mainBackground paymentPage">
-            <Header/>
+            <Navbar/>
             <div className="container">
                     <div className="row">
                         <div className="col-xs-12 col-md-4 col-md-offset-4 margin-top-70" >

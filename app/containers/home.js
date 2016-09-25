@@ -2,7 +2,8 @@
 import React, {Component, PropTypes} from 'react'
 import {connect} from 'react-redux'
 import { Link } from 'react-router'
-import jQuery from 'jquery';
+import Navbar from '../components/navbar'
+
 
 class Home extends Component {
 
@@ -22,28 +23,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-                <div className="navbar navbar-inverse navbar-fixed-top open">
-                    <div className="container width100">
-                        <div className="navbar-header margin-left-0">
-                            <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                <span className="icon-bar"></span>
-                                <span className="icon-bar"></span>
-                                <span className="icon-bar"></span>
-                            </button>
-                            <Link className="logo" to="/"><img src="img/global/logo.png" alt="Logo"/></Link>
-                        </div>
-                        <div className="navbar-collapse collapse">
-                            <ul className="nav navbar-nav navbar-right">
-                                <li><a href="#" className="scroll">Home</a></li>
-                                <li><a href="#main-info" >About</a></li>
-                                <li><a href="#" className="scroll">Contact</a></li>
-                                <li><Link to="/ticket">Ticket</Link></li>
-                                <li><Link to="/signin">Sign in</Link></li>
-                                <li><Link to="/signup">Sign Up</Link></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
+                <Navbar/>
                 <header>
                     <div className="container">
                         <div className="row header-info">

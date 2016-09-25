@@ -1,13 +1,13 @@
 import React, {Component, PropTypes} from 'react'
 import {connect} from 'react-redux'
-import Header from '../components/navbar'
+import Navbar from '../components/navbar'
 
 class RouteView extends Component {
 
     render() {
         return (
             <div>
-                <Header/>
+                <Navbar/>
                 <div className="row">
                     <div className="col-md-6 col-md-offset-3 no-padding">
                         <div className="label label-danger visible-ie8">
