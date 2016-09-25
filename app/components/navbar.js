@@ -18,16 +18,7 @@ class Navbar extends Component{
                     <li><a href="#main-info" >About</a></li>
                     <li><a href="#" className="scroll">Contact</a></li>
                     <li><Link to="/ticket">My Ticket</Link></li>
-                    <li className="dropdown dropdown-user">
-                        <a href="" className="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
-                            <img src="img/sign/icon-color.png" />
-                        </a>
-                        <ul className="dropdown-menu dropdown-menu-default whiteBackground" id="subTopMenu" >
-                            <li>
-                                <Link to="/profile"><i className="icon-user"><img src="img/sign/pwicon.png" /></i> Profile Setting</Link>
-                            </li>
-                        </ul>
-                    </li>
+                    <li><Link to="/profile">Profile</Link></li>
                 </ul>
             );
         }
