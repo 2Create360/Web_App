@@ -2,6 +2,8 @@ import React, {Component, PropTypes} from 'react'
 import {connect} from 'react-redux'
 import { Link } from 'react-router'
 import Navbar from '../components/navbar'
+import '../styles/profile.css'
+import '../styles/payment.css'
 
 class Profile extends React.Component{
     render(){

@@ -4,6 +4,9 @@ import {connect} from 'react-redux'
 import { Link } from 'react-router'
 import Navbar from '../components/navbar'
 
+import '../styles/animate.css'
+import '../styles/homeHeader.css'
+import '../styles/homeScreen.css'
 
 class Home extends Component {
 

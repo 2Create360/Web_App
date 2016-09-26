@@ -5,7 +5,7 @@ import AvailableTicket from '../components/availableticket'
 import BuyTicket from '../components/buyticket'
 import Navbar from '../components/navbar'
 import UsedTicket from '../components/usedticket'
-
+import '../styles/ticket.css'
 
 class Ticket extends Component {
 

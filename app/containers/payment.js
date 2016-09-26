@@ -3,7 +3,7 @@ import {connect} from 'react-redux'
 import { Link } from 'react-router'
 import Navbar from '../components/navbar'
 import Pay from '../components/pay';
-
+import '../styles/payment.css'
 
 class Option extends Component{
     render(){

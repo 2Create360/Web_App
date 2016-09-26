@@ -5,7 +5,7 @@ import {signInUser, signInUserSuccess, signInUserFailure} from '../actions/users
 import { Link } from 'react-router'
 import Navbar from '../components/navbar'
 import SocialLogin from '../components/sociallogin';
-
+import '../styles/sign.css'
 
 //Client side validation
 function validate(values) {
